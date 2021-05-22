@@ -59,9 +59,23 @@ class RustyKey extends React.Component {
   }
 }
 
+class Amulett extends React.Component {
+  render() {
+    return (
+      <Item
+        title="Amulett of Sune"
+        content="A golden chain with a holy symbol of Sune."
+      >
+        <StaticImage src="../images/items/amulett.png"></StaticImage>
+      </Item>
+    )
+  }
+}
+
 export {
     BookOfRaven,
     MapOfMystery,
     Coins,
-    RustyKey
+    RustyKey,
+    Amulett
 }
