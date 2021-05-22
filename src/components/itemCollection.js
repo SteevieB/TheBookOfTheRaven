@@ -46,8 +46,22 @@ class Coins extends React.Component {
   }
 }
 
+class RustyKey extends React.Component {
+  render() {
+    return (
+      <Item
+        title="A small rusty key"
+        content="You wonder where this could probably fit..."
+      >
+        <StaticImage src="../images/items/rusty-key.png"></StaticImage>
+      </Item>
+    )
+  }
+}
+
 export {
     BookOfRaven,
     MapOfMystery,
-    Coins
+    Coins,
+    RustyKey
 }
