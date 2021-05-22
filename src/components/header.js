@@ -4,20 +4,24 @@ import Navbar from "./ezNavbar"
 import BgImg from "./bgImage"
 
 const Header = ({ siteTitle, subTitle }) => (
-  <header className="absolute w-full">
-    <div className="h-32 md:h-48 z-0 relative">
-      <BgImg />
-    </div>
-    <div className="z-10 h-44 sm:h-48 md:h-48 -mt-44 sm:-mt-48 relative">
-      <div className="text-center p-12">
-        <h1 className="text-prim-light drop-shadow text-5xl md:text-6xl">
-          <Link to="/">{siteTitle}</Link>
-        </h1>
-        <h2 className="text-prim-light text-2xl font-roboto">{subTitle}</h2>
+  <>
+    <header className="w-full">
+      <div className="h-36 md:h-48 z-0 relative">
+        <BgImg />
       </div>
-    </div>
-    <Navbar />
-  </header>
+      <div className="z-1 h-44 sm:h-48 md:h-48 -mt-44 sm:-mt-48 relative">
+        <div className="text-center p-12">
+          <h1 className="text-prim-light drop-shadow text-5xl md:text-6xl">
+            <Link to="/">{siteTitle}</Link>
+          </h1>
+          <h2 className="text-prim-light text-2xl font-roboto">{subTitle}</h2>
+        </div>
+      </div>
+      <div className="relative z-1">
+        <Navbar />
+      </div>
+    </header>
+  </>
 )
 
 export default Header
