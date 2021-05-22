@@ -62,14 +62,25 @@ const Glossary = () => (
       "
     ></PostCard>
     <PostCard
-      title="The Wythway"
-      subTitle="Eine Gruppe von Werraben um Zasperdes, deren Gründer"
-      content="Der Scarlet Sash machte es sich zur Aufgabe, magische Gegenstände von bösen Wesen und böse Gegenstände in großem Umfang zu verstecken.'
+      title="The Wytchway"
+      content="To use the map, the characters must first locate Wytchway, a hamlet that serves as a starting point. Its location is left deliberately vague so that you can place it anywhere you like. The characters can find it by consulting sages or old maps in Candlekeep.
+      Monster attacks forced the residents of Wytchway to abandon the hamlet years ago. All that remains is a broken-down wagon surrounded by rotted fences and dilapidated, fog-shrouded farmsteads overrun with wild pigs.'
       "
     ></PostCard>
     <PostCard
       title="Dalereckoning (DR)"
       content="Dalereckoning is taken from the Year of Sunrise, 1 DR, when the Standing Stone was raised by the elves of Cormanthyr and the human Dalesfolk. Since this time, humans were permitted by the Elven Court to settle in the more open regions of the forests. In some texts, primarily those which do not have direct ties to Dales history, Dalereckoning is called Freeman's Reckoning (FR). The calendar is widely used in Faerûn but has not spread beyond its shores.'
+      "
+    ></PostCard>
+    <PostCard
+      title="Charm of Heroism"
+      content="For 1 hour after drinking it, you gain 10 temporary hit points that last for 1 hour. For the same duration, you are under the effect of the bless spell (no concentration required).'
+      "
+    ></PostCard>
+    <PostCard
+      title="Bless (Spell)"
+      subTitle="1st Lvl | Duration: 1min"
+      content="Whenever you make an attack roll or a saving throw before the spell ends, you can roll a d4 and add the number rolled to the attack roll or saving throw.'
       "
     ></PostCard>
   </Layout>
