@@ -6,7 +6,7 @@ class MapOfMystery extends React.Component {
   render() {
     return (
         <>
-            <h1>Mysteriöse Karte</h1>
+            <h1 className="p-4 text-2xl font-bold">Mysteriöse Karte</h1>
             <StaticImage src="../images/maps/map.jpg"></StaticImage>
         </> 
     )
@@ -17,7 +17,7 @@ class MapChaletBrantifax extends React.Component {
   render() {
     return (
       <>
-        <h1>Karte des Chalet Brantifax</h1>
+        <h1 className="p-4 text-2xl font-bold">Karte des Chalet Brantifax</h1>
         <StaticImage src="../images/maps/chalet-brantifax-map.jpg"></StaticImage>
       </>
     )
@@ -28,7 +28,7 @@ class MapMausoleum extends React.Component {
   render() {
     return (
       <>
-        <h1>Karte des Harrn Mausoleums</h1>
+        <h1 className="p-4 text-2xl font-bold">Karte des Harrn Mausoleums</h1>
         <StaticImage src="../images/maps/harrn-mausoleum-map.jpg"></StaticImage>
       </>
     )

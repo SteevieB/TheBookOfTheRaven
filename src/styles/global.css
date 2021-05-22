@@ -2,4 +2,5 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.googleapis.com/css?family=Roboto|Sofia|Sacramento");
+/* @import url("https://fonts.googleapis.com/css?family=Roboto|Sofia|Sacramento"); */
+@import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&family=Roboto:wght@100;500;900&display=swap');

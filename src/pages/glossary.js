@@ -7,7 +7,7 @@ import PostCard from "../components/postCard"
 const Glossary = () => (
   <Layout>
     <Seo title="Glossar" />
-    <h1>Glossar</h1>
+    <h1 className="p-4 text-2xl font-bold">Glossar</h1>
     <PostCard
       title="The Book of the Raven"
       subTitle="Ein Bericht"

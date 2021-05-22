@@ -4,13 +4,13 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "prim-light": "#e5e2e1",
-        "prim-1": "#804412",
-        "prim-dark": "#6f5c4d",
+        "prim-light": "#f3f2f1",
+        "prim-color": "#8a7f7b",
+        "prim-dark": "#3e3e3b",
       },
     },
     fontFamily: {
-      serif: ["Sofia", "Georgia"],
+      serif: ["Reenie Beanie", "Georgia"],
       roboto: ["Roboto", "Georgia"],
     },
     letterSpacing: {
