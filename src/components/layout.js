@@ -27,7 +27,7 @@ const Layout = ({ children }) => {
         subTitle={data.site.siteMetadata?.description || `Description`}
       />
       <div className="max-w-screen-lg px-2 sm:px-6 lg:px-8 mx-auto">
-        <main className="pt-64">{children}</main>
+        <main>{children}</main>
       </div>
       <Footer author={data.site.siteMetadata?.author || `Author`} />
     </>

@@ -10,20 +10,20 @@ import "../styles/global.css"
 const IndexPage = () => (
   <Layout>
     <Seo title="Home" />
-    <div className="w-full md:w-4/5 flex mx-auto mt-6 sm:mt-4">
+    <div className="w-full md:w-4/5 m-1 mx-auto">
+      {/* <StaticImage src="../images/chalet-brantifax.png"></StaticImage> */}
+      {/* <StaticImage src="../images/creatures/wereraven.png"></StaticImage> */}
+    </div>
+    <div className="w-full sm:w-3/5 md:w-2/5 flex mx-auto mt-6 sm:mt-4">
       <PostCard
-        title="Meine Website wird momentan umgebaut!"
-        content="Bitte entschuldigt die Unordnung hier. Die Website wird auf den neuesten Stand der Technik gebracht und mit neuen, aktuellen Inhalten befüllt."
+        title="Welcome travellers on a mysterious jorney."
+        subTitle="I hope you're sitting comfortable. ;)"
+        content="
+        You'll find additional resources in this player's companion.
+        Please have a look around! The Website might update dependent on the party's progress in the game.
+        "
       >
-        <StaticImage src="../images/chalet-brantifax.webp"></StaticImage>
-      </PostCard>
-      <PostCard
-        title="Kontakt:"
-        subTitle="info@bildhauer-vale.de"
-        address="Hochgernstraße 16, 83224 Grassau"
-        content="Da ich den „social Media“ abgeschworen habe, ist – zumindest bewusst – nichts von mir / über mich auf Facebook, Twitter, Instagram etc. zu finden. Wenn sie Fragen oder eine Auftragsidee haben, kontaktieren sie mich am besten per Email."
-      >
-        <StaticImage src="../images/chalet-brantifax.png"></StaticImage>
+        <StaticImage src="../images/candlekeep-mysteries-banner.webp"></StaticImage>
       </PostCard>
     </div>
   </Layout>
