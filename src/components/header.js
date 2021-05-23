@@ -6,7 +6,7 @@ import BgImg from "./bgImage"
 const Header = ({ siteTitle, subTitle }) => (
   <>
     <header className="w-full">
-      <div className="h-36 md:h-48 z-0 relative">
+      <div className="truncate h-36 md:h-48 z-0 relative">
         <BgImg />
       </div>
       <div className="z-1 h-44 sm:h-48 md:h-48 -mt-44 sm:-mt-48 relative">

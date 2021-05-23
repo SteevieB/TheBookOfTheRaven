@@ -7,7 +7,7 @@ const BgImg = () => (
     src="../images/banner/chalet-brantifax.webp"
     alt="chalet-brantifax"
     loading="eager"
-    className="object-fill w-full h-full z-0"
+    className="w-full h-full z-0"
   />
 )
 export default BgImg

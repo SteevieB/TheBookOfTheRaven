@@ -18,7 +18,7 @@ class MapChaletBrantifax extends React.Component {
     return (
       <>
         <h1 className="p-4 text-2xl font-bold">Karte des Chalet Brantifax</h1>
-        <StaticImage src="../images/maps/chalet-brantifax-map.jpg"></StaticImage>
+        <StaticImage src="../images/maps/chalet-brantifax-player-map.jpg"></StaticImage>
       </>
     )
   }
@@ -29,7 +29,7 @@ class MapMausoleum extends React.Component {
     return (
       <>
         <h1 className="p-4 text-2xl font-bold">Karte des Harrn Mausoleums</h1>
-        <StaticImage src="../images/maps/harrn-mausoleum-map.jpg"></StaticImage>
+        <StaticImage src="../images/maps/harrn-mausoleum-player-map.jpg"></StaticImage>
       </>
     )
   }

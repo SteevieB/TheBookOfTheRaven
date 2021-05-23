@@ -1,6 +1,7 @@
 import * as React from "react"
 
 import Item from "./Item"
+import PropertyOfCandlekeep from "../components/PropertyOfCandlekeep"
 import { StaticImage } from "gatsby-plugin-image"
 
 class BookOfRaven extends React.Component {
@@ -15,6 +16,20 @@ class BookOfRaven extends React.Component {
       </Item>
     )}
 }
+
+class BusinessCard extends React.Component {
+  render() {
+    return (
+      <Item
+        title="A small card fell out of the book"
+        content="It states it'd be from the Library of Candlekeep."
+      >
+        <PropertyOfCandlekeep/>
+      </Item>
+    )
+  }
+}
+
 
 class MapOfMystery extends React.Component {
   render() {
@@ -99,11 +114,12 @@ class Journal extends React.Component {
 }
 
 export {
-    BookOfRaven,
-    MapOfMystery,
-    Coins,
-    RustyKey,
-    Amulett,
-    Ring,
-    Journal
+  BookOfRaven,
+  BusinessCard,
+  MapOfMystery,
+  Coins,
+  RustyKey,
+  Amulett,
+  Ring,
+  Journal,
 }

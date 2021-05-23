@@ -5,11 +5,13 @@ import Seo from "../components/seo"
 // import Cards from "../components/cards"
 import { StaticImage } from "gatsby-plugin-image"
 import PostCard from "../components/postCard"
+import PropertyOfCandlekeep from "../components/PropertyOfCandlekeep"
 import "../styles/global.css"
 
 const IndexPage = () => (
   <Layout>
     <Seo title="Home" />
+    <PropertyOfCandlekeep />
     <div className="w-full md:w-4/5 m-1 mx-auto">
       {/* <StaticImage src="../images/chalet-brantifax.png"></StaticImage> */}
       {/* <StaticImage src="../images/creatures/wereraven.png"></StaticImage> */}
@@ -23,7 +25,9 @@ const IndexPage = () => (
         Please have a look around! The Website might update dependent on the party's progress in the game.
         "
       >
-        <StaticImage src="../images/candlekeep-mysteries-banner.webp"></StaticImage>
+        <div className="w-1/2 truncate -mt-6 sm:-mt-0 mx-auto">
+          <StaticImage src="../images/raven-icon.png"></StaticImage>
+        </div>
       </PostCard>
     </div>
   </Layout>
