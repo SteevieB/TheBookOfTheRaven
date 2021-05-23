@@ -72,10 +72,38 @@ class Amulett extends React.Component {
   }
 }
 
+class Ring extends React.Component {
+  render() {
+    return (
+      <Item
+        title="Golden Ring"
+        content="A golden signet ring with an imprint of a deer."
+      >
+        <StaticImage src="../images/items/gold-ring.png"></StaticImage>
+      </Item>
+    )
+  }
+}
+
+class Journal extends React.Component {
+  render() {
+    return (
+      <Item
+        title="The Baroness's Journal"
+        content="A neatly leather bound journal with a wolf imprinted at the front."
+      >
+        <StaticImage src="../images/items/journal.png"></StaticImage>
+      </Item>
+    )
+  }
+}
+
 export {
     BookOfRaven,
     MapOfMystery,
     Coins,
     RustyKey,
-    Amulett
+    Amulett,
+    Ring,
+    Journal
 }
