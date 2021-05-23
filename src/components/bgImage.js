@@ -4,8 +4,8 @@ import "../styles/global.css"
 
 const BgImg = () => (
   <StaticImage
-    src="../images/chalet-brantifax.webp"
-    alt="background image"
+    src="../images/banner/chalet-brantifax.webp"
+    alt="chalet-brantifax"
     loading="eager"
     className="object-fill w-full h-full z-0"
   />
