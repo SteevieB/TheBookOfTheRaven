@@ -26,8 +26,10 @@ const Layout = ({ children }) => {
         siteTitle={data.site.siteMetadata?.title || `Title`}
         subTitle={data.site.siteMetadata?.description || `Description`}
       />
-      <div className="max-w-screen-lg px-2 sm:px-6 lg:px-8 mx-auto">
-        <main>{children}</main>
+      <div className="bg-gradient-to-t p-2 from-gray-300 via-white to-gray-300">
+        <div className="max-w-screen-lg px-2 sm:px-6 lg:px-8 mx-auto">
+          <main className="">{children}</main>
+        </div>
       </div>
       <Footer author={data.site.siteMetadata?.author || `Author`} />
     </>

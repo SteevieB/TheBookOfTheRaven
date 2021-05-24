@@ -2,7 +2,17 @@ import * as React from "react"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import { BookOfRaven, BusinessCard, MapOfMystery, Coins, RustyKey, Amulett, Ring, Journal } from "../components/itemCollection"
+import {
+  BookOfRaven,
+  BusinessCard,
+  MapOfMystery,
+  Coins,
+  RustyKey,
+  Amulett,
+  Ring,
+  Journal,
+  StuddedLeatherArmor,
+} from "../components/itemCollection"
 const Items = () => (
   <Layout>
     <Seo title="Items" />
@@ -18,6 +28,7 @@ const Items = () => (
           <Amulett />
           <Ring />
           <Journal />
+          <StuddedLeatherArmor />
         </div>
       </div>
     </div>

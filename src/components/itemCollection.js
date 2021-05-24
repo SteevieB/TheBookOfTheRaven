@@ -5,7 +5,8 @@ import PropertyOfCandlekeep from "../components/PropertyOfCandlekeep"
 import { StaticImage } from "gatsby-plugin-image"
 
 class BookOfRaven extends React.Component {
-    render() { return (
+  render() {
+    return (
       <Item
         title="Ein mysteriöses Buch"
         subTitle="Abgenutzter Ledereinband, vergilbte knittrige Seiten"
@@ -14,7 +15,8 @@ class BookOfRaven extends React.Component {
       >
         <StaticImage src="../images/items/book.png"></StaticImage>
       </Item>
-    )}
+    )
+  }
 }
 
 class BusinessCard extends React.Component {
@@ -22,14 +24,13 @@ class BusinessCard extends React.Component {
     return (
       <Item
         title="A small card fell out of the book"
-        content="It states it'd be from the Library of Candlekeep."
+        content="It states it belonges to the Library of Candlekeep."
       >
-        <PropertyOfCandlekeep/>
+        <PropertyOfCandlekeep />
       </Item>
     )
   }
 }
-
 
 class MapOfMystery extends React.Component {
   render() {
@@ -113,6 +114,20 @@ class Journal extends React.Component {
   }
 }
 
+class StuddedLeatherArmor extends React.Component {
+  render() {
+    return (
+      <Item
+        title="A Studded Leather Armor"
+        subTitle="Armor class: 12 + Dex modifier"
+        content="Suitable for an average sized human."
+      >
+        <StaticImage src="../images/items/studded-leather.png"></StaticImage>
+      </Item>
+    )
+  }
+}
+
 export {
   BookOfRaven,
   BusinessCard,
@@ -122,4 +137,5 @@ export {
   Amulett,
   Ring,
   Journal,
+  StuddedLeatherArmor,
 }

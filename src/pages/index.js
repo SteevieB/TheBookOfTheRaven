@@ -2,16 +2,14 @@ import * as React from "react"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-// import Cards from "../components/cards"
 import { StaticImage } from "gatsby-plugin-image"
 import PostCard from "../components/postCard"
-import PropertyOfCandlekeep from "../components/PropertyOfCandlekeep"
+
 import "../styles/global.css"
 
 const IndexPage = () => (
   <Layout>
     <Seo title="Home" />
-    <PropertyOfCandlekeep />
     <div className="w-full md:w-4/5 m-1 mx-auto">
       {/* <StaticImage src="../images/chalet-brantifax.png"></StaticImage> */}
       {/* <StaticImage src="../images/creatures/wereraven.png"></StaticImage> */}
@@ -34,6 +32,3 @@ const IndexPage = () => (
 )
 
 export default IndexPage
-
-
-
