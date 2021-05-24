@@ -17,9 +17,9 @@ const Items = () => (
   <Layout>
     <Seo title="Items" />
     <div className="w-full mx-auto">
-      <h1 className="text-2xl p-4">Party's inventory:</h1>
+      <h1 className="text-2xl p-4 text-highlight-red">Party's inventory:</h1>
       <div className="mx-auto w-full">
-        <div className="flex flex-col md:flex-row flex-wrap m-2 space-y-4 rounded">
+        <div className="flex flex-wrap md:flex-row m-2">
           <BookOfRaven />
           <BusinessCard />
           <MapOfMystery />
