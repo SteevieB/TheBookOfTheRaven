@@ -2,32 +2,35 @@ import * as React from "react"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import { StaticImage } from "gatsby-plugin-image"
-import PostCard from "../components/postCard"
+import { Greeter, Goodbye } from "../components/Greeter"
+import {
+  Scarecrow,
+  CrawlingClaw,
+  Poltergeist,
+  Wereraven,
+  Gargoyle,
+  Ghoul,
+  Wight,
+  Chalet,
+} from "../components/enemies"
 
 import "../styles/global.css"
 
 const IndexPage = () => (
   <Layout>
     <Seo title="Home" />
-    <div className="w-full md:w-4/5 m-1 mx-auto">
-      {/* <StaticImage src="../images/chalet-brantifax.png"></StaticImage> */}
-      {/* <StaticImage src="../images/creatures/wereraven.png"></StaticImage> */}
+    <div className="w-full md:w-4/5 my-1 mx-auto flex flex-row">
+      {/* <Chalet /> */}
+      {/* <CrawlingClaw /> */}
+      {/* <Scarecrow /> */}
+      {/* <Poltergeist /> */}
+      {/* <Wereraven /> */}
+      {/* <Gargoyle /> */}
+      {/* <Ghoul /> */}
+      {/* <Wight /> */}
     </div>
-    <div className="w-full sm:w-3/5 md:w-2/5 flex mx-auto mt-6 sm:mt-4">
-      <PostCard
-        title="Welcome travellers on a mysterious jorney."
-        subTitle="I hope you're sitting comfortable. ;)"
-        content="
-        You'll find additional resources in this player's companion.
-        Please have a look around! The Website might update dependent on the party's progress in the game.
-        "
-      >
-        <div className="w-1/2 truncate -mt-6 sm:-mt-0 mx-auto">
-          <StaticImage src="../images/raven-icon.png"></StaticImage>
-        </div>
-      </PostCard>
-    </div>
+    <Greeter />
+    {/* <Goodbye /> */}
   </Layout>
 )
 
