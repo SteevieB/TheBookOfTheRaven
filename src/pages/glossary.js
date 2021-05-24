@@ -7,7 +7,7 @@ import GlossaryCard from "../components/GlossaryCard"
 const Glossary = () => (
   <Layout>
     <Seo title="Glossar" />
-    <h1 className="p-4 text-2xl font-bold">Glossar</h1>
+    <h1 className="p-4 text-2xl text-highlight-red">Glossary</h1>
     <GlossaryCard
       title="The Book of the Raven"
       subTitle="Ein Bericht"

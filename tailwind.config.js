@@ -7,6 +7,8 @@ module.exports = {
         "prim-light": "#f3f2f1",
         "prim-color": "#8a7f7b",
         "prim-dark": "#3e3e3b",
+        "highlight-red": "#8b281c",
+        "highlight-yellow": "#d3b63b",
       },
     },
     fontFamily: {
