@@ -88,7 +88,7 @@ class Amulett extends React.Component {
   }
 }
 
-class Ring extends React.Component {
+class GoldenRing extends React.Component {
   render() {
     return (
       <Item
@@ -128,6 +128,34 @@ class StuddedLeatherArmor extends React.Component {
   }
 }
 
+class RingOfJumping extends React.Component {
+  render() {
+    return (
+      <Item
+        title="Wooden Ring"
+        // subTitle="Cast Jump as a bonus Action"
+        content="There are nice engravings and inlayed emeralds on the outside"
+        // content2="While wearing this ring, you can cast the jump spell from it as a bonus action at will, but can target only yourself when you do so."
+      >
+        <StaticImage src="../images/items/ring-of-jumping.png"></StaticImage>
+      </Item>
+    )
+  }
+}
+
+class Saddle extends React.Component {
+  render() {
+    return (
+      <Item
+        title="Nicely crafted Saddle"
+        content="While in this saddle on a mount, you can't be dismounted against your will if you're conscious, and attack rolls against the mount have disadvantage."
+      >
+        <StaticImage src="../images/items/saddle.png"></StaticImage>
+      </Item>
+    )
+  }
+}
+
 export {
   BookOfRaven,
   BusinessCard,
@@ -135,7 +163,9 @@ export {
   Coins,
   RustyKey,
   Amulett,
-  Ring,
+  GoldenRing,
   Journal,
   StuddedLeatherArmor,
+  RingOfJumping,
+  Saddle,
 }

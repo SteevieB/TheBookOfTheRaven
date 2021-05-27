@@ -41,4 +41,64 @@ class MapMausoleum extends React.Component {
   }
 }
 
-export { MapOfMystery, MapChaletBrantifax, MapMausoleum }
+class MapChaletUG extends React.Component {
+  render() {
+    return (
+      <>
+        <h1 className="p-4 text-2xl font-bold text-highlight-red">
+          Inside Chalet Brantifax
+        </h1>
+        <StaticImage src="../images/maps/chalet-cellar.png"></StaticImage>
+      </>
+    )
+  }
+}
+
+class MapChaletEG extends React.Component {
+  render() {
+    return (
+      <>
+        <h1 className="p-4 text-2xl font-bold text-highlight-red">
+          Inside Chalet Brantifax
+        </h1>
+        <StaticImage src="../images/maps/chalet-eg.png"></StaticImage>
+      </>
+    )
+  }
+}
+
+class MapChaletOG extends React.Component {
+  render() {
+    return (
+      <>
+        <h1 className="p-4 text-2xl font-bold text-highlight-red">
+          Inside Chalet Brantifax
+        </h1>
+        <StaticImage src="../images/maps/chalet-og1.png"></StaticImage>
+      </>
+    )
+  }
+}
+
+class MapChaletOG2 extends React.Component {
+  render() {
+    return (
+      <>
+        <h1 className="p-4 text-2xl font-bold text-highlight-red">
+          Inside Chalet Brantifax
+        </h1>
+        <StaticImage src="../images/maps/chalet-og2.png"></StaticImage>
+      </>
+    )
+  }
+}
+
+export {
+  MapOfMystery,
+  MapChaletBrantifax,
+  MapMausoleum,
+  MapChaletUG,
+  MapChaletEG,
+  MapChaletOG,
+  MapChaletOG2,
+}

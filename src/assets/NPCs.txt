@@ -1,0 +1,32 @@
+# General
+## Little one
+	Lawful neutral 
+# Scarlet Sash
+## Madrina Natterask
+	Lawful good human wereraven (age 55)
+	A short, stocky glassblower with a modest collection of homemade bottles and flasks, Madrina sees herself as the matriarch of the kindness. She speaks calmly and matter-of-factly, and scolds those who display bad manners or foolish behavior. She can easily mimic the sound of breaking glass, which she likes to use to create a distraction.
+	Personality Trait. “I can be trusted with a secret and will carry that secret to the grave.”
+	Ideal. “Without vigilance, evil runs amok.”
+	Bond. “I love glass. I adore its colors and its polished gleam. Watching glass bend and take different forms reminds me that anything is possible.”
+	Flaw. “I love sticking my beak into everyone’s business.”
+## Taspar Hatchhill
+	Lawful good human wereraven (age 71)
+	The oldest member of the kindness and the chalet’s self-appointed caretaker is a tall, timid man with wispy white hair and a lazy left eye. Taspar is polite but nervous around strangers. He mimics the sound of a snorting hog to scare away treasure hunters.
+	Personality Trait. “Words fail me often, so I’m happy to let others speak on my behalf.”
+	Ideal. “I would rather eat a snake than fall prey to the trappings of the civilized world.”
+	Bond. “Birds can be greedy, but they’re not half as greedy as humans. I prefer to live among the birds, thank you very much.”
+	Flaw. “I stutter when I’m agitated.”
+## Rennick Groka
+	Lawful good human wereraven (age 22)
+	A morose, rail-thin figure, Rennick is cautious and wise beyond their years. They respect their fellow wereravens but are deeply mistrustful of others. Rennick frightens away unwanted visitors by mimicking the sound of creaking doors and floorboards, and bodies being dragged across the floor.
+	Personality Trait. “The Scarlet Sash gives me all the love I need. I don’t need any more.”
+	Ideal. “Freedom is the power to become a bird, take to the sky, and leave the world behind for a while.”
+	Bond. “The Scarlet Sash means everything to me. I’m honored to be part of this kindness and would die to preserve it.”
+	Flaw. “Wickedness ruins everything, and nothing I do seems to matter. I fear we’re all doomed to suffer the insufferable. Misery has become my bosom companion.”
+## Vinique
+	Lawful good human wereraven (age 30)
+	Vinique brought a ghastly, evil relic (see the “Orcus Figurine” sidebar later in the adventure) to the chalet. She stashes it in an old, nonfunctional lantern that she keeps with her at all times. Gifted with a wry wit and a witch’s cackle of a laugh, Vinique mimics the happy cries of small children and the screams of a dying man to frighten intruders.
+	Personality Trait. “Once I make a decision, that’s it. No one can change my mind.”
+	Ideal. “Evil might be everywhere, but as long as there’s breath in my body, I will never stop pecking at its heels.”
+	Bond. “Madrina is the mother I never had. I don’t know what I’d do without her.”
+	Flaw. “I talk over others, and I always need to have the last word.”

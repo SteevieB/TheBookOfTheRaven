@@ -98,6 +98,12 @@ const Glossary = () => (
       Once you detect the presence of a creature in this way, you can read its thoughts for the rest of the duration as described above, even if you can't see it, but it must still be within range.
       "
     ></GlossaryCard>
+    <GlossaryCard
+      title="Jump (Spell)"
+      subTitle="1st Lvl | Duration: 1min | 1 Action"
+      content="You touch a creature. The creature's jump distance is tripled until the spell ends.
+      "
+    ></GlossaryCard>
   </Layout>
 )
 

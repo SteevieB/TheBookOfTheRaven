@@ -9,9 +9,11 @@ import {
   Coins,
   RustyKey,
   Amulett,
-  Ring,
+  GoldenRing,
   Journal,
   StuddedLeatherArmor,
+  RingOfJumping,
+  Saddle,
 } from "../components/itemCollection"
 const Items = () => (
   <Layout>
@@ -26,9 +28,11 @@ const Items = () => (
           <Coins />
           <RustyKey />
           <Amulett />
-          <Ring />
+          <GoldenRing />
           <Journal />
           <StuddedLeatherArmor />
+          <RingOfJumping />
+          <Saddle />
         </div>
       </div>
     </div>
