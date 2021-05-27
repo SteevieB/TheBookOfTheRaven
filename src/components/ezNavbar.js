@@ -11,6 +11,9 @@ const Navbar = () => (
       <Link className="hover:underline" to="/">
         Home
       </Link>
+      <Link className="hover:underline" to="/characters">
+        Characters
+      </Link>
       <Link className="hover:underline" to="/map">
         Maps
       </Link>
