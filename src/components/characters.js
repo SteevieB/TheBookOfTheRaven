@@ -4,7 +4,9 @@ import "../styles/global.css"
 const StatRow = ({ children }) => {
   return (
     <div className="">
-      <div className="flex flex-row text-center space-x-2 p-2">{children}</div>
+      <div className="grid grid-cols-3 gap-2 text-center p-2 mx-auto">
+        {children}
+      </div>
     </div>
   )
 }
@@ -19,22 +21,22 @@ const Abilities = ({ str, dex, con, int, wis, cha }) => {
 
   return (
     <StatRow>
-      <span className="rounded-full shadow p-2 bg-gray-200">
+      <span className="rounded-full shadow p-2 bg-gray-200 w-16">
         Str: {str}({strMod})
       </span>
-      <span className="rounded-full shadow p-2 bg-gray-200">
+      <span className="rounded-full shadow p-2 bg-gray-200 w-16">
         Dex: {dex}({dexMod})
       </span>
-      <span className="rounded-full shadow p-2 bg-gray-200">
+      <span className="rounded-full shadow p-2 bg-gray-200 w-16">
         Con: {con}({conMod})
       </span>
-      <span className="rounded-full shadow p-2 bg-gray-200">
+      <span className="rounded-full shadow p-2 bg-gray-200 w-16">
         Int: {int}({intMod})
       </span>
-      <span className="rounded-full shadow p-2 bg-gray-200">
+      <span className="rounded-full shadow p-2 bg-gray-200 w-16">
         Wis: {wis}({wisMod})
       </span>
-      <span className="rounded-full shadow p-2 bg-gray-200">
+      <span className="rounded-full shadow p-2 bg-gray-200 w-16">
         Cha: {cha}({chaMod})
       </span>
     </StatRow>
@@ -63,11 +65,97 @@ const Character = ({
   )
 }
 
+const Abilities2 = ({ str, dex, con, int, wis, cha }) => {
+  let strMod = Math.floor((parseInt(str) - 10) / 2).toString()
+  let dexMod = Math.floor((parseInt(dex) - 10) / 2).toString()
+  let conMod = Math.floor((parseInt(con) - 10) / 2).toString()
+  let intMod = Math.floor((parseInt(int) - 10) / 2).toString()
+  let wisMod = Math.floor((parseInt(wis) - 10) / 2).toString()
+  let chaMod = Math.floor((parseInt(cha) - 10) / 2).toString()
+
+  return (
+    <>
+      <div className="grid grid-cols-6 text-highlight-red2 p-1 leading-tight">
+        <span className="font-bold">STR</span>
+        <span className="font-bold">DEX</span>
+        <span className="font-bold">CON</span>
+        <span className="font-bold">INT</span>
+        <span className="font-bold">WIS</span>
+        <span className="font-bold">CHA</span>
+        <span className="">
+          {str}({strMod})
+        </span>
+        <span className="">
+          {dex}({dexMod})
+        </span>
+        <span className="">
+          {con}({conMod})
+        </span>
+        <span className="">
+          {int}({intMod})
+        </span>
+        <span className="">
+          {wis}({wisMod})
+        </span>
+        <span className="">
+          {cha}({chaMod})
+        </span>
+      </div>
+    </>
+  )
+}
+
+const Character2 = ({
+  playerName,
+  characterName,
+  alignement,
+  ac,
+  lvl,
+  hp,
+  spd,
+  characterClass,
+  race,
+}) => {
+  return (
+    <>
+      <div className="p-1">
+        <h1 className="text-lg font-bold tracking-wide leading-tight mx-1 font-dndheading text-highlight-red2 uppercase">
+          {characterName}
+          <span className="text-blue-700 text-sm font-normal font-noto float-right">
+            {race} {characterClass}
+          </span>
+        </h1>
+        <h2 className="text-sm mx-1 leading-tight font-noto">
+          {alignement}, ({playerName})
+        </h2>
+        <hr className="bg-highlight-red h-1 my-1 border-solid border-1 border-gray-700" />
+        <div className="text-highlight-red grid grid-cols-2">
+          <span>
+            <span className="font-bold">Level</span> {lvl}
+          </span>
+          <span>
+            <span className="font-bold">Hit Points</span> {hp}
+          </span>
+          <span>
+            <span className="font-bold">Armor Class</span> {ac}
+          </span>
+          <span>
+            <span className="font-bold">Speed</span> {spd}
+          </span>
+        </div>
+        <hr className="bg-highlight-red h-1 my-1 border-solid border-1 border-gray-700" />
+      </div>
+    </>
+  )
+}
+
 const CharacterWrapper = ({ children }) => {
   return (
     <>
-      <div className="rounded shadow bg-yellow-100 w-3/4 md:w-1/2 mx-auto my-3">
-        <div className="flex flex-row">{children}</div>
+      <div className="rounded shadow bg-bg-creme w-full md:w-1/2 mx-auto my-3">
+        <hr className="bg-border-orange h-2 border-solid border-1 border-gray-700" />
+        <div className="flex flex-row py-2">{children}</div>
+        <hr className="bg-border-orange h-2 border-solid border-1 border-gray-700" />
       </div>
     </>
   )
@@ -99,17 +187,20 @@ const Andreas = ({ init }) => {
     <>
       <CharacterWrapper>
         <div className="w-full">
-          <Character
+          <Character2
             playerName="Andreas"
             characterName="Character"
+            alignement="Lawful Neutral"
             ac="15"
             lvl="3"
+            hp="27"
+            spd="25"
             characterClass="Barbarian"
             race="Half-Orc"
           />
-          <Abilities str="16" dex="14" con="16" int="8" wis="10" cha="10" />
+          <Abilities2 str="16" dex="14" con="16" int="8" wis="10" cha="10" />
         </div>
-        <span className="place-self-center text-center text-lg font-bold">
+        <span className="place-self-center text-center text-lg font-bold font-noto">
           Init: {init}
         </span>
       </CharacterWrapper>
@@ -122,7 +213,7 @@ const Sumsi = ({ init }) => {
     <>
       <CharacterWrapper>
         <div className="w-full">
-          <Character
+          <Character2
             playerName="Sumsi"
             characterName="Character"
             ac="13"
@@ -130,9 +221,9 @@ const Sumsi = ({ init }) => {
             characterClass="Bard"
             race="Half-Elf"
           />
-          <Abilities str="8" dex="16" con="14" int="12" wis="8" cha="17" />
+          <Abilities2 str="8" dex="16" con="14" int="12" wis="8" cha="17" />
         </div>
-        <span className="place-self-center text-center text-lg font-bold">
+        <span className="place-self-center text-center text-lg font-bold font-noto">
           Init: {init}
         </span>
       </CharacterWrapper>
@@ -145,7 +236,7 @@ const Julian = ({ init }) => {
     <>
       <CharacterWrapper>
         <div className="w-full">
-          <Character
+          <Character2
             playerName="Julian"
             characterName="Character"
             ac="13"
@@ -153,9 +244,9 @@ const Julian = ({ init }) => {
             characterClass="Druid"
             race="Hill Dwarf"
           />
-          <Abilities str="8" dex="14" con="16" int="12" wis="16" cha="8" />
+          <Abilities2 str="8" dex="14" con="16" int="12" wis="16" cha="8" />
         </div>
-        <span className="place-self-center text-center text-lg font-bold">
+        <span className="place-self-center text-center text-lg font-bold font-noto">
           Init: {init}
         </span>
       </CharacterWrapper>
@@ -168,7 +259,7 @@ const Johannes = ({ init }) => {
     <>
       <CharacterWrapper>
         <div className="w-full">
-          <Character
+          <Character2
             playerName="Johannes"
             characterName="Character"
             ac="12"
@@ -176,9 +267,9 @@ const Johannes = ({ init }) => {
             characterClass="Fighter"
             race="Human"
           />
-          <Abilities str="10" dex="11" con="12" int="13" wis="14" cha="15" />
+          <Abilities2 str="10" dex="11" con="12" int="13" wis="14" cha="15" />
         </div>
-        <span className="place-self-center text-center text-lg font-bold">
+        <span className="place-self-center text-center text-lg font-bold font-noto">
           Init: {init}
         </span>
       </CharacterWrapper>
@@ -191,7 +282,7 @@ const HungNi = ({ init }) => {
     <>
       <CharacterWrapper>
         <div className="w-full">
-          <Character
+          <Character2
             playerName="Hung-Ni"
             characterName="Character"
             ac="13"
@@ -199,9 +290,9 @@ const HungNi = ({ init }) => {
             characterClass="Ranger"
             race="Human"
           />
-          <Abilities str="10" dex="16" con="14" int="12" wis="16" cha="9" />
+          <Abilities2 str="10" dex="16" con="14" int="12" wis="16" cha="9" />
         </div>
-        <span className="place-self-center text-center text-lg font-bold">
+        <span className="place-self-center text-center text-lg font-bold font-noto">
           Init: {init}
         </span>
       </CharacterWrapper>
