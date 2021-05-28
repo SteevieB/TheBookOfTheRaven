@@ -152,7 +152,7 @@ const Character2 = ({
 const CharacterWrapper = ({ children }) => {
   return (
     <>
-      <div className="rounded shadow bg-bg-creme w-full md:w-1/2 mx-auto my-3">
+      <div className="rounded shadow bg-bg-creme w-full mx-auto my-3">
         <hr className="bg-border-orange h-2 border-solid border-1 border-gray-700" />
         <div className="flex flex-row py-2">{children}</div>
         <hr className="bg-border-orange h-2 border-solid border-1 border-gray-700" />
@@ -162,12 +162,14 @@ const CharacterWrapper = ({ children }) => {
 }
 
 const DefaultCharacter = ({ init }) => {
+  const playerName = "Default"
+  const initiative = init
   return (
     <>
       <CharacterWrapper>
         <div className="w-full">
           <Character
-            playerName="Default"
+            playerName={playerName}
             characterName="Character"
             ac="12"
             lvl="0"
@@ -176,19 +178,21 @@ const DefaultCharacter = ({ init }) => {
           />
           <Abilities str="8" dex="8" con="8" int="8" wis="8" cha="8" />
         </div>
-        <span className="text-lg font-bold">Init: {init}</span>
+        <span className="text-lg font-bold">Init: {initiative}</span>
       </CharacterWrapper>
     </>
   )
 }
 
 const Andreas = ({ init }) => {
+  const playerName = "Andreas"
+  const initiative = init
   return (
     <>
       <CharacterWrapper>
         <div className="w-full">
           <Character2
-            playerName="Andreas"
+            playerName={playerName}
             characterName="Character"
             alignement="Lawful Neutral"
             ac="15"
@@ -201,7 +205,7 @@ const Andreas = ({ init }) => {
           <Abilities2 str="16" dex="14" con="16" int="8" wis="10" cha="10" />
         </div>
         <span className="place-self-center text-center text-lg font-bold font-noto">
-          Init: {init}
+          Init: {initiative}
         </span>
       </CharacterWrapper>
     </>
@@ -209,22 +213,27 @@ const Andreas = ({ init }) => {
 }
 
 const Sumsi = ({ init }) => {
+  const playerName = "Sumsi"
+  const initiative = init
   return (
     <>
       <CharacterWrapper>
         <div className="w-full">
           <Character2
-            playerName="Sumsi"
+            playerName={playerName}
             characterName="Character"
+            alignement="Lawful Neutral"
             ac="13"
             lvl="3"
+            hp="27"
+            spd="30"
             characterClass="Bard"
             race="Half-Elf"
           />
           <Abilities2 str="8" dex="16" con="14" int="12" wis="8" cha="17" />
         </div>
         <span className="place-self-center text-center text-lg font-bold font-noto">
-          Init: {init}
+          Init: {initiative}
         </span>
       </CharacterWrapper>
     </>
@@ -232,22 +241,27 @@ const Sumsi = ({ init }) => {
 }
 
 const Julian = ({ init }) => {
+  const playerName = "Julian"
+  const initiative = init
   return (
     <>
       <CharacterWrapper>
         <div className="w-full">
           <Character2
-            playerName="Julian"
+            playerName={playerName}
             characterName="Character"
+            alignement="Lawful Neutral"
             ac="13"
             lvl="3"
+            hp="27"
+            spd="30"
             characterClass="Druid"
             race="Hill Dwarf"
           />
           <Abilities2 str="8" dex="14" con="16" int="12" wis="16" cha="8" />
         </div>
         <span className="place-self-center text-center text-lg font-bold font-noto">
-          Init: {init}
+          Init: {initiative}
         </span>
       </CharacterWrapper>
     </>
@@ -255,22 +269,27 @@ const Julian = ({ init }) => {
 }
 
 const Johannes = ({ init }) => {
+  const playerName = "Johannes"
+  const initiative = init
   return (
     <>
       <CharacterWrapper>
         <div className="w-full">
           <Character2
-            playerName="Johannes"
+            playerName={playerName}
             characterName="Character"
+            alignement="Lawful Neutral"
             ac="12"
             lvl="3"
+            hp="27"
+            spd="30"
             characterClass="Fighter"
             race="Human"
           />
           <Abilities2 str="10" dex="11" con="12" int="13" wis="14" cha="15" />
         </div>
         <span className="place-self-center text-center text-lg font-bold font-noto">
-          Init: {init}
+          Init: {initiative}
         </span>
       </CharacterWrapper>
     </>
@@ -278,26 +297,54 @@ const Johannes = ({ init }) => {
 }
 
 const HungNi = ({ init }) => {
+  const playerName = "Hung-Ni"
+  const initiative = init
   return (
     <>
       <CharacterWrapper>
         <div className="w-full">
           <Character2
-            playerName="Hung-Ni"
+            playerName={playerName}
             characterName="Character"
+            alignement="Lawful Neutral"
             ac="13"
             lvl="3"
+            hp="27"
+            spd="30"
             characterClass="Ranger"
             race="Human"
           />
           <Abilities2 str="10" dex="16" con="14" int="12" wis="16" cha="9" />
         </div>
-        <span className="place-self-center text-center text-lg font-bold font-noto">
-          Init: {init}
+        <span className="place-self-end text-center text-lg font-bold font-noto">
+          Init: {initiative}
         </span>
       </CharacterWrapper>
     </>
   )
 }
 
-export { DefaultCharacter, Andreas, Sumsi, Johannes, Julian, HungNi }
+const Players = ({ players }) => {
+  return (
+    <>
+      {players.map(player => (
+        <div className="player" key={player.playerName}>
+          {player.playerName}
+        </div>
+      ))}
+    </>
+  )
+}
+
+const players = [Andreas, Sumsi, Johannes, Julian, HungNi]
+
+export {
+  DefaultCharacter,
+  Andreas,
+  Sumsi,
+  Johannes,
+  Julian,
+  HungNi,
+  Players,
+  players,
+}

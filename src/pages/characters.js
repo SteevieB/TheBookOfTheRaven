@@ -2,7 +2,6 @@ import * as React from "react"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import {
-  DefaultCharacter,
   Andreas,
   Sumsi,
   Johannes,
@@ -13,12 +12,13 @@ import {
 const CharacterPage = () => (
   <Layout>
     <Seo title="Characters" />
-    {/* <DefaultCharacter init="10" /> */}
-    <Andreas init="14" />
-    <Sumsi init="13" />
-    <Johannes init="12" />
-    <Julian init="11" />
-    <HungNi init="10" />
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+      <Andreas init="14" />
+      <Sumsi init="13" />
+      <Johannes init="12" />
+      <Julian init="11" />
+      <HungNi init="10" />
+    </div>
   </Layout>
 )
 
