@@ -11,9 +11,13 @@ const PostCard = ({ title, subTitle, children, content, content2 }) => {
           <div className="p-4 font-bold text-xl text-highlight-red md:mb-1">
             {title}
           </div>
-          <p className="p-2">{subTitle}</p>
-          <p className="px-1 text-gray-500 text-justify">{content}</p>
-          {/* <p className="px-1 text-gray-500 text-justify">{content2}</p> */}
+
+          <p className="p-1 leading-tight font-noto">{subTitle}</p>
+          <hr className="bg-highlight-red h-1 my-4 border-solid border-1 border-gray-700" />
+          <p className="px-1 mb-4 text-gray-500 text-justify font-noto">
+            {content}
+          </p>
+          <hr className="bg-highlight-red h-1 -mb-4 border-solid border-1 border-gray-700" />
         </div>
       </div>
     </>

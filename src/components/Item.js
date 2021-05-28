@@ -8,6 +8,7 @@ const Item = ({ title, subTitle, stats, children, content, content2 }) => {
           <div className="truncate h-32 md:h-32 w-1/2 mx-auto m-2">
             {children}
           </div>
+          <hr className="bg-highlight-red h-1 w-5/6 mx-auto border-solid border-1 border-gray-700" />
           <div className="md:px-6 md:py-4 h-full">
             <div className="p-2 font-bold text-xl text-highlight-red">
               {title}

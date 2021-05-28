@@ -7,7 +7,7 @@ const Navbar = () => (
     <h2 className="invisible sm:visible text-highlight-red -mr-56 sm:mr-12 font-serif text-4xl font-normal">
       Player's Companion
     </h2>
-    <div className="flex space-x-4 sm:space-x-12 sm:text-lg text-gray-800 font-medium">
+    <div className="flex space-x-4 sm:space-x-12 sm:text-lg text-gray-800 font-thin font-noto">
       <Link className="hover:underline" to="/">
         Home
       </Link>
