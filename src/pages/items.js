@@ -21,7 +21,7 @@ const Items = () => (
     <div className="w-full mx-auto">
       <h1 className="text-2xl p-4 text-highlight-red">Party's inventory:</h1>
       <div className="mx-auto w-full">
-        <div className="flex flex-wrap md:flex-row m-2">
+        <div className="grid grid-cols-1 md:grid-cols-3">
           <BookOfRaven />
           <BusinessCard />
           <MapOfMystery />
