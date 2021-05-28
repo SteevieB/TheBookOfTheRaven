@@ -3,7 +3,7 @@ import * as React from "react"
 const Item = ({ title, subTitle, stats, children, content, content2 }) => {
   return (
     <>
-      <div className="w-11/12 md:w-1/3 mx-auto p-2">
+      <div className="w-11/12 md:w-full mx-auto p-2">
         <div className="rounded-xl overflow-hidden shadow flex flex-col">
           <div className="truncate h-32 md:h-32 w-1/2 mx-auto m-2">
             {children}
