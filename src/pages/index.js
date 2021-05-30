@@ -19,7 +19,7 @@ import "../styles/global.css"
 const IndexPage = () => (
   <Layout>
     <Seo title="Home" />
-    <div className="w-full md:w-4/5 my-1 mx-auto flex flex-row">
+    <div className="w-full md:w-4/5 my-1 mx-auto">
       {/* <Chalet /> */}
       {/* <CrawlingClaw /> */}
       {/* <Scarecrow /> */}

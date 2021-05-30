@@ -10,30 +10,40 @@ const Glossary = () => (
     <h1 className="p-4 text-2xl text-highlight-red">Glossary</h1>
     <GlossaryCard
       title="The Book of the Raven"
-      subTitle="Ein Bericht"
-      content="Ein Augenzeugenbericht über einen Reitunfall der Autorin und Anschließender Rekonvaleszenz bei den Vistani.
-      Während diese zur Genesung von bei den 'Planar Travellers' - den Vistani - aufgenommen wurde entstand mit dem Fahrenden Volk eine Freundschaft.
-      Das Buch erzählt etwa drei Monate in der die Autorin und ihr Pferd die Vistani begleiten. Die meiste Zeit verbringt sie liegend in einem der Wagen.
-      Obwohl etwa ein Dutzend der Vistani ausführlich in dem Schriftstück beschrieben werden, werden nur zwei mit Namen genannt:
-      Drasha, ein Mädchen welches das verwundete Bein der Autorin mit Bandagen und Wickeln versorgte und Darzin, ein einarmiger Junge mit einer furchtbaren Angst vor Wölfen,
-      der wunderschöne Lieder sang um von Leid und Schmerzen abzulenken.
-      Das Buch gibt eine detaillierte Sicht über das Leben der Vistani, deren Musik und Essen besonders hervorgehoben wird.
-      Auch die Überlandreise wird beschrieben, sei es auch aus Sicht eines Passagiers, der sich die meiste Zeit innerhalb einer der Wagen aufhielt.
-      "
+      subTitle="The diary of a girl" //Heluthe
+      content="
+      This small, leather-bound journal holds the ruminations and descriptions of everyday life of a young girl who stumbled upon some secrets while still in the throes of pubescence. 
+      Amidst the doodles and many melodramatic asides, dark discoveries lay nestled within these pages—for those patient enough to unearth them.
+      Can anything of this weight be possibly carried by a raven?"
+
+      // Ein Augenzeugenbericht über einen Reitunfall der Autorin und Anschließender Rekonvaleszenz bei den Vistani.
+      // Während diese zur Genesung von bei den 'Planar Travellers' - den Vistani - aufgenommen wurde entstand mit dem Fahrenden Volk eine Freundschaft.
+      // Das Buch erzählt etwa drei Monate in der die Autorin und ihr Pferd die Vistani begleiten. Die meiste Zeit verbringt sie liegend in einem der Wagen.
+      // Obwohl etwa ein Dutzend der Vistani ausführlich in dem Schriftstück beschrieben werden, werden nur zwei mit Namen genannt:
+      // Drasha, ein Mädchen welches das verwundete Bein der Autorin mit Bandagen und Wickeln versorgte und Darzin, ein einarmiger Junge mit einer furchtbaren Angst vor Wölfen,
+      // der wunderschöne Lieder sang um von Leid und Schmerzen abzulenken.
+      // Das Buch gibt eine detaillierte Sicht über das Leben der Vistani, deren Musik und Essen besonders hervorgehoben wird.
+      // Auch die Überlandreise wird beschrieben, sei es auch aus Sicht eines Passagiers, der sich die meiste Zeit innerhalb einer der Wagen aufhielt.
     ></GlossaryCard>
     <GlossaryCard
-      title="Die Vistani"
-      subTitle="Fahrendes Volk von Händlern und Mystikern"
+      title="Heluthe"
+      subTitle="One of the Brantifax's daughters"
+      content="9yo Girl Appeared as a Raven to the party dropping 'The Book of the Raven' wich includes the 'Map of Mystery'."
+    />
+    <GlossaryCard
+      title="Sylphene"
+      subTitle="One of the Brantifax's daughters"
+      content="Died at the age of 6. She was bedridden all her life."
+    />
+    <GlossaryCard
+      title="The Vistani"
+      subTitle="Highly reputed traveling performers and fortune tellers"
       content="
-      Die Vistani sind 'Planar Travellers', die of in Shadowfell anzutreffen sind.
-      Sie scheinen immun zu sein gegen das Grauen, welches alle anderen Reisenden durch diese Plane befällt.
-      Die Vistani zeigen offen ihren Reichtum und teilen ihr Glück gerne mit Freunden und Fremden.
-      Sie lösen ihre Uneinigkeiten mit Wettbewerben die in Singen, Tanzen und Geschichtenerzählen enden.
-      Die Familienverbunde der Vistani - groß, wie klein - werden vom jeweiligen Ältesten als Oberhaupt geleitet.
-      Dieser hat die Aufgabe Traditionen zu bewahren, Streite zu schlichten, den Weg der Reise zu bestimmen und allgemein die Lebensart der Vistani zu schützen.
-      Vistani haben die Fähigkeit (oft auch 'das Geschenk' genannt) Wege durch die Nebelregionen von Forlorn in Shadowfell zu finden, die gemeinhin als 'Domains of Dread' bekannt sind.
-      Die Heimat von Wesen der Dunkelheit. 'Das Geschenk' wurde ihnen durch die mysteriösen Wesen der 'Dark Powers', als Lohn für deren Freundlichkeit gegenüber Fremden zuteil.
-      Die Vistani glauben daran, dass Raben verlorene Seelen mit sich tragen. Deshalb gilt das töten solcher als Zeichen des Unglücks.
+        The Vistani are planar travelers often encountered in the Shadowfell, and they seem to be immune to the despair that besets all other visitors to that plane. They travel in horse-drawn, barrel-shaped wagons and have no permanent home.
+        The Vistani display their wealth openly as a sign of prosperity, sharing their good fortune with friends and strangers alike. Vistani resolve disagreements through contests that end with reconciliatory singing, dancing, and storytelling.
+        Vistani families can be big or small, but each family is a gerontocracy, with the oldest member ruling the roost. This elder has most of the responsibility for enforcing traditions, settling disputes, setting the course for the group’s travels, and preserving the Vistani way of life.
+        The Vistani have the power—some say gift—to travel through the mists that lead to forlorn realms within the Shadowfell known as the Domains of Dread, where creatures born in darkness dwell. This “gift” was thrust upon them by mysterious entities called the Dark Powers, as a boon for their kindness toward strangers.
+        The Vistani believe that ravens carry lost souls within them. Hence, killing a raven is considered bad luck in Vistani culture.
       "
     ></GlossaryCard>
     <GlossaryCard
@@ -45,14 +55,19 @@ const Glossary = () => (
     ></GlossaryCard>
     <GlossaryCard
       title="Die Karte des Mysteriums"
-      subTitle="Eine Karte, die zwischen die Seiten des Book of the Raven gesteckt wurde."
+      subTitle="A map tucked between the pages of the Book of the Raven."
       content="
+      It’s clear that the map was never part of the book to begin with. 
       "
     ></GlossaryCard>
     <GlossaryCard
       title="Anil Zasperdes"
-      subTitle="Ein Werrabe mit dem Talent Dinge zu verstecken."
-      content="Er war Begründer des 'Scarlet Sash'. Zasperdes wählte das 'Book of the Raven' als Versteck für die Karte, da jeder, der sich für den Inhalt des Buches interessiert auch daran interessiert sein könnte der Karte zu ihrem Ziel zu folgen: Ein verfallenes Chalet im einsamen Hochland.
+      subTitle="Zasperdes was a wereraven who had a gift for hiding things."
+      content="
+      He was the founder of the Scarlet Sash, a group of wereravens known for stealing magic items from evil individuals and hiding evil items from the world at large. 
+      He chose the Book of the Raven as a hiding place for the map because anyone interested in its subject matter might also be interested in following the map to its destination.
+      Anil tried to lure certain groups of suspicious travellers to come to the Chalet in order to check if the carry mighty or evil magic items. 
+      If so the scarlet sash would snitch them and hide the items away.
       "
     ></GlossaryCard>
     <GlossaryCard

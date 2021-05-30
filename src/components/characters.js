@@ -221,16 +221,16 @@ const Sumsi = ({ init }) => {
         <div className="w-full">
           <Character2
             playerName={playerName}
-            characterName="Character"
-            alignement="Lawful Neutral"
+            characterName="Lan Hua 'Harmony'"
+            alignement="Chaotic Good"
             ac="13"
             lvl="3"
-            hp="27"
+            hp="24"
             spd="30"
             characterClass="Bard"
-            race="Half-Elf"
+            race="Tiefling"
           />
-          <Abilities2 str="8" dex="16" con="14" int="12" wis="8" cha="17" />
+          <Abilities2 str="8" dex="14" con="14" int="12" wis="10" cha="16" />
         </div>
         <span className="place-self-center text-center text-lg font-bold font-noto">
           Init: {initiative}
