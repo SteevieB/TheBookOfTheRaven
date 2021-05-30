@@ -7,6 +7,7 @@ import {
   Johannes,
   Julian,
   HungNi,
+  Fabi,
 } from "../components/characters"
 
 const CharacterPage = () => (
@@ -18,6 +19,7 @@ const CharacterPage = () => (
       <Johannes init="12" />
       <Julian init="11" />
       <HungNi init="10" />
+      <Fabi init="" />
     </div>
   </Layout>
 )

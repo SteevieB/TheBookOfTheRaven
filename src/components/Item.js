@@ -13,7 +13,7 @@ const Item = ({ title, subTitle, stats, children, content, content2 }) => {
             <div className="p-2 font-bold text-xl text-highlight-red">
               {title}
             </div>
-            <p className="p-2">{subTitle}</p>
+            <p className="p-2 text-sm">{subTitle}</p>
             <p className="px-2 pb-2">{stats}</p>
             <p className="px-1 text-gray-500 text-justify">{content}</p>
             <p className="px-1 pb-4 text-gray-500 text-justify">{content2}</p>

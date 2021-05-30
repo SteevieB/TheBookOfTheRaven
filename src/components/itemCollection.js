@@ -125,13 +125,40 @@ class StuddedLeatherArmor extends React.Component {
   }
 }
 
+class HeavyCrossbow extends React.Component {
+  render() {
+    return (
+      <Item
+        title="Heavy Crossbow"
+        subTitle="1d10 piercing | (Range 100/400) | 9kg | Two-Handed"
+        content="The crossbow is bigger than most, and the weight strains your arms as you raise it to eye level and inspect its condition. The pine frame and iron parts feel well-joined and show only a few spots of rust. Affixed at the stock and connected by two cords to a finger-thick drawstring is an iron crank, without which flinging heavy bolts from this beast would be nigh impossible."
+      >
+        <StaticImage src="../images/items/heavy-crossbow.png"></StaticImage>
+      </Item>
+    )
+  }
+}
+class CrossbowBolts extends React.Component {
+  render() {
+    return (
+      <Item
+        title="Crossbow Bolts"
+        subTitle="15 Pieces of handy Bolts"
+        content=""
+      >
+        <StaticImage src="../images/items/bolts.png"></StaticImage>
+      </Item>
+    )
+  }
+}
+
 class RingOfJumping extends React.Component {
   render() {
     return (
       <Item
         title="Wooden Ring"
         // subTitle="Cast Jump as a bonus Action"
-        content="There are nice engravings and inlayed emeralds on the outside"
+        content="There are nice engravings and inlays of emeralds on the outside."
         // content2="While wearing this ring, you can cast the jump spell from it as a bonus action at will, but can target only yourself when you do so."
       >
         <StaticImage src="../images/items/ring-of-jumping.png"></StaticImage>
@@ -156,6 +183,34 @@ class Saddle extends React.Component {
   }
 }
 
+const items = [
+  <BookOfRaven />,
+  <BusinessCard />,
+  <MapOfMystery />,
+  <Coins />,
+  <RustyKey />,
+  <Amulett />,
+  <GoldenRing />,
+  <Journal />,
+  <StuddedLeatherArmor />,
+  <RingOfJumping />,
+  <Saddle />,
+  <HeavyCrossbow />,
+  <CrossbowBolts />,
+]
+
+export function ListItems() {
+  return (
+    <ul className="grid grid-cols-1 md:grid-cols-3">
+      {items.map(item => (
+        <li key={item} className="">
+          {item}
+        </li>
+      ))}
+    </ul>
+  )
+}
+
 export {
   BookOfRaven,
   BusinessCard,
@@ -168,4 +223,6 @@ export {
   StuddedLeatherArmor,
   RingOfJumping,
   Saddle,
+  HeavyCrossbow,
+  CrossbowBolts,
 }

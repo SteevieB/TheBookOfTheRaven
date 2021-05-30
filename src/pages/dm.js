@@ -1,4 +1,5 @@
 import * as React from "react"
+import Collapsible from "react-collapsible"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
@@ -11,6 +12,7 @@ import {
   StatBlockSpecter,
   StatBlockGargoyle,
   StatBlockWight,
+  ListEncounters,
 } from "../components/dmStuff"
 import {
   MapOfMysteryDM,
@@ -18,21 +20,29 @@ import {
   MapMausoleumDM,
 } from "../components/Maps"
 
-const Map = () => (
-  <Layout>
-    <Seo title="DM's Notes" />
-    {/* <MapOfMysteryDM /> */}
-    {/* <MapChaletBrantifax /> */}
-    {/* <MapMausoleumDM /> */}
-    <StatBlockCrawlingClaw />
-    <StatBlockScarecrow />
-    <StatBlockWereraven />
+class Map extends React.Component {
+  state = {
+    open: false,
+  }
+  render() {
+    return (
+      <Layout>
+        <Seo title="DM's Notes" />
+        <ListEncounters />
+        {/* <MapOfMysteryDM /> */}
+        {/* <MapChaletBrantifax /> */}
+        {/* <MapMausoleumDM /> */}
+        {/* <StatBlockCrawlingClaw /> */}
+        {/* <StatBlockScarecrow /> */}
+        {/* <StatBlockWereraven />
     <StatBlockSpecter />
     <StatBlockGargoyle />
     <StatBlockGhoul />
     <StatBlockWarhorseSkeleton />
-    <StatBlockWight />
-  </Layout>
-)
+    <StatBlockWight /> */}
+      </Layout>
+    )
+  }
+}
 
 export default Map

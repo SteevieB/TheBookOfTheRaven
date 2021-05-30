@@ -316,7 +316,35 @@ const HungNi = ({ init }) => {
           />
           <Abilities2 str="10" dex="16" con="14" int="12" wis="16" cha="9" />
         </div>
-        <span className="place-self-end text-center text-lg font-bold font-noto">
+        <span className="place-self-center text-center text-lg font-bold font-noto">
+          Init: {initiative}
+        </span>
+      </CharacterWrapper>
+    </>
+  )
+}
+
+const Fabi = ({ init }) => {
+  const playerName = "Fabi"
+  const initiative = init
+  return (
+    <>
+      <CharacterWrapper>
+        <div className="w-full">
+          <Character2
+            playerName={playerName}
+            characterName="Puyani"
+            alignement="Neutral Good"
+            ac="17"
+            lvl="3"
+            hp="17"
+            spd="30"
+            characterClass="Sorcerer"
+            race="Tortle"
+          />
+          <Abilities2 str="12" dex="8" con="13" int="12" wis="16" cha="14" />
+        </div>
+        <span className="place-self-center text-center text-lg font-bold font-noto">
           Init: {initiative}
         </span>
       </CharacterWrapper>
@@ -336,7 +364,7 @@ const Players = ({ players }) => {
   )
 }
 
-const players = [Andreas, Sumsi, Johannes, Julian, HungNi]
+const players = [Andreas, Sumsi, Johannes, Julian, HungNi, Fabi]
 
 export {
   DefaultCharacter,
@@ -345,6 +373,7 @@ export {
   Johannes,
   Julian,
   HungNi,
+  Fabi,
   Players,
   players,
 }
