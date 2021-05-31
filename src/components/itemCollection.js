@@ -50,8 +50,25 @@ class MapOfMystery extends React.Component {
 class Coins extends React.Component {
   render() {
     return (
-      <Item title="Party funds" subTitle="100 Golden Coins">
+      <Item
+        title="Party funds"
+        subTitle="25 Golden Coins"
+        content="Gold you acquired in your previous adventures"
+      >
         <StaticImage src="../images/items/coins.png"></StaticImage>
+      </Item>
+    )
+  }
+}
+class Rations extends React.Component {
+  render() {
+    return (
+      <Item
+        title="Rations"
+        subTitle="For a party of six it lasts you around 3 days"
+        content="Rations consist of dry foods suitable for extended travel, including jerky, dried fruit, hardtack, and nuts."
+      >
+        <StaticImage src="../images/items/rations.png"></StaticImage>
       </Item>
     )
   }
@@ -184,19 +201,20 @@ class Saddle extends React.Component {
 }
 
 const items = [
-  <BookOfRaven />,
-  <BusinessCard />,
-  <MapOfMystery />,
+  // <BookOfRaven />,
+  // <BusinessCard />,
+  // <MapOfMystery />,
   <Coins />,
-  <RustyKey />,
-  <Amulett />,
-  <GoldenRing />,
-  <Journal />,
-  <StuddedLeatherArmor />,
-  <RingOfJumping />,
-  <Saddle />,
-  <HeavyCrossbow />,
-  <CrossbowBolts />,
+  <Rations />,
+  // <RustyKey />,
+  // <Amulett />,
+  // <GoldenRing />,
+  // <Journal />,
+  // <StuddedLeatherArmor />,
+  // <RingOfJumping />,
+  // <Saddle />,
+  // <HeavyCrossbow />,
+  // <CrossbowBolts />,
 ]
 
 export function ListItems() {

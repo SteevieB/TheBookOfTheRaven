@@ -93,6 +93,19 @@ class MapChaletOG2 extends React.Component {
   }
 }
 
+class MapOfTheWorld extends React.Component {
+  render() {
+    return (
+      <>
+        <h1 className="p-4 text-2xl font-bold text-highlight-red">
+          The sword coast
+        </h1>
+        <StaticImage src="../images/maps/world-map.png"></StaticImage>
+      </>
+    )
+  }
+}
+
 export {
   MapOfMystery,
   MapChaletBrantifax,
@@ -101,4 +114,5 @@ export {
   MapChaletEG,
   MapChaletOG,
   MapChaletOG2,
+  MapOfTheWorld,
 }

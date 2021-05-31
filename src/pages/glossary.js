@@ -7,7 +7,9 @@ import GlossaryCard from "../components/GlossaryCard"
 const Glossary = () => (
   <Layout>
     <Seo title="Glossar" />
-    <h1 className="p-4 text-2xl text-highlight-red">Glossary</h1>
+    <h1 className="p-4 text-2xl text-highlight-red">
+      A small collection of common knoledge (might expand over time...)
+    </h1>
     <GlossaryCard
       title="The Book of the Raven"
       subTitle="The diary of a girl" //Heluthe
@@ -24,18 +26,18 @@ const Glossary = () => (
       // der wunderschöne Lieder sang um von Leid und Schmerzen abzulenken.
       // Das Buch gibt eine detaillierte Sicht über das Leben der Vistani, deren Musik und Essen besonders hervorgehoben wird.
       // Auch die Überlandreise wird beschrieben, sei es auch aus Sicht eines Passagiers, der sich die meiste Zeit innerhalb einer der Wagen aufhielt.
-    ></GlossaryCard>
-    <GlossaryCard
+    />
+    {/* <GlossaryCard
       title="Heluthe"
       subTitle="One of the Brantifax's daughters"
       content="9yo Girl Appeared as a Raven to the party dropping 'The Book of the Raven' wich includes the 'Map of Mystery'."
-    />
-    <GlossaryCard
+    /> */}
+    {/* <GlossaryCard
       title="Sylphene"
       subTitle="One of the Brantifax's daughters"
       content="Died at the age of 6. She was bedridden all her life."
-    />
-    <GlossaryCard
+    /> */}
+    {/* <GlossaryCard
       title="The Vistani"
       subTitle="Highly reputed traveling performers and fortune tellers"
       content="
@@ -45,24 +47,26 @@ const Glossary = () => (
         The Vistani have the power—some say gift—to travel through the mists that lead to forlorn realms within the Shadowfell known as the Domains of Dread, where creatures born in darkness dwell. This “gift” was thrust upon them by mysterious entities called the Dark Powers, as a boon for their kindness toward strangers.
         The Vistani believe that ravens carry lost souls within them. Hence, killing a raven is considered bad luck in Vistani culture.
       "
-    ></GlossaryCard>
-    <GlossaryCard
+    />
+     */}
+    {/* <GlossaryCard
       title="Shadowfell"
       subTitle="The Shadowfell, also known as the Plane of Shadow, is one of the planes of existence in various cosmological models."
       content="
-      Its purpose and characteristics evolved as new cosmologies were formulated. 
-      Other names for this plane included Shadowland, the Demiplane of Shadow, and simply Shadow.
-      It exists as sort of counterpart to the Feywild, in the sense that it is a reflection, or 'echo', of the Prime Material Plane. Unlike the Feywild, it is a bleak, desolate place full of decay and death.'
+        Its purpose and characteristics evolved as new cosmologies were formulated.
+        Other names for this plane included Shadowland, the Demiplane of Shadow, and simply Shadow.
+        It exists as sort of counterpart to the Feywild, in the sense that it is a reflection, or 'echo', of the Prime Material Plane. 
+        Unlike the Feywild, it is a bleak, desolate place full of decay and death.'
       "
-    ></GlossaryCard>
-    <GlossaryCard
-      title="Die Karte des Mysteriums"
+    ></GlossaryCard> */}
+    {/* <GlossaryCard
+      title="The Map of Mystery"
       subTitle="A map tucked between the pages of the Book of the Raven."
       content="
       It’s clear that the map was never part of the book to begin with. 
       "
-    ></GlossaryCard>
-    <GlossaryCard
+    ></GlossaryCard> */}
+    {/* <GlossaryCard
       title="Anil Zasperdes"
       subTitle="Zasperdes was a wereraven who had a gift for hiding things."
       content="
@@ -71,10 +75,10 @@ const Glossary = () => (
       Anil tried to lure certain groups of suspicious travellers to come to the Chalet in order to check if the carry mighty or evil magic items. 
       If so the scarlet sash would snitch them and hide the items away.
       "
-    ></GlossaryCard>
-    <GlossaryCard
+    ></GlossaryCard> */}
+    {/* <GlossaryCard
       title="The Scarlet Sash"
-      subTitle="Eine Gruppe von Werraben um Zasperdes, deren Gründer"
+      subTitle="A group of wereravens founded by Anil Zasperdes"
       content="
       Years after Anil Zasperdes’s death, members of the Scarlet Sash continue to use the chalet as a meeting place. 
       They keep some robes, sandals, and scarlet sashes in the house so that they have clothing to wear while in humanoid form. 
@@ -83,33 +87,23 @@ const Glossary = () => (
       The Scarlet Sash has eight members currently, though it has had as few as three and as many as twelve in the past. 
       Four members are present when the characters arrive at Chalet Brantifax: Madrina Natterask, Taspar Hatchhill, Rennick Groka, and Vinique.'
       "
-    ></GlossaryCard>
-    <GlossaryCard
+    ></GlossaryCard> */}
+    {/* <GlossaryCard
       title="The Wytchway"
       content="
-      To use the map, the characters must first locate Wytchway, a hamlet that serves as a starting point. 
-      Its location is left deliberately vague so that you can place it anywhere you like. 
-      The characters can find it by consulting sages or old maps in Candlekeep.
-      Monster attacks forced the residents of Wytchway to abandon the hamlet years ago. 
-      All that remains is a broken-down wagon surrounded by rotted fences and dilapidated, fog-shrouded farmsteads overrun with wild pigs.'
-      "
-    ></GlossaryCard>
-    <GlossaryCard
-      title="Dalereckoning (DR)"
-      content="
-      Dalereckoning is taken from the Year of Sunrise, 1 DR, when the Standing Stone was raised by the elves of Cormanthyr and the human Dalesfolk. 
-      Since this time, humans were permitted by the Elven Court to settle in the more open regions of the forests. 
-      In some texts, primarily those which do not have direct ties to Dales history, Dalereckoning is called Freeman's Reckoning (FR). 
-      The calendar is widely used in Faerûn but has not spread beyond its shores.'
-      "
-    ></GlossaryCard>
-    <GlossaryCard
+      To use the map, you must first locate Wytchway, a hamlet that serves as the starting point. 
+      Its location is hard to decern without the advice of people living close by."
+      // Silence reigns over this fog-shrouded hamlet, seemingly in perfect order, but utterly devoid of any villagers. Though the huts and houses remain mostly intact, doors hang wide open, and aside from the occasional wild critter, there is no life within. A bucket used to draw well water lies on its side on the ground, water spilled out over the soil, still damp. The ashes in a nearby hearth are cold with no glowing embers visible to a watchful eye.
+      // "
+    ></GlossaryCard> */}
+
+    {/* <GlossaryCard
       title="Charm of Heroism"
       content="
       For 1 hour after drinking it, you gain 10 temporary hit points that last for 1 hour. 
       For the same duration, you are under the effect of the bless spell (no concentration required).'
       "
-    ></GlossaryCard>
+    ></GlossaryCard> */}
     <GlossaryCard
       title="Bless (Spell)"
       subTitle="1st Lvl | Duration: 1min"
@@ -117,14 +111,14 @@ const Glossary = () => (
       Whenever you make an attack roll or a saving throw before the spell ends, you can roll a d4 and add the number rolled to the attack roll or saving throw.'
       "
     ></GlossaryCard>
-    <GlossaryCard
+    {/* <GlossaryCard
       title="Potion of Mind Reading"
       content="
       When you drink this potion, you gain the effect of the detect thoughts spell (save DC 13). 
       The potion's dense, purple liquid has an ovoid cloud of pink floating in it.'
       "
-    ></GlossaryCard>
-    <GlossaryCard
+    ></GlossaryCard> */}
+    {/* <GlossaryCard
       title="Detect Thoughts (Spell)"
       subTitle="2nd Lvl | Duration: 1min"
       content="
@@ -144,13 +138,22 @@ const Glossary = () => (
       You can't detect a creature with an Intelligence of 3 or lower or one that doesn't speak any language.
       Once you detect the presence of a creature in this way, you can read its thoughts for the rest of the duration as described above, even if you can't see it, but it must still be within range.
       "
-    ></GlossaryCard>
-    <GlossaryCard
+    ></GlossaryCard> */}
+    {/* <GlossaryCard
       title="Jump (Spell)"
       subTitle="1st Lvl | Duration: 1min | 1 Action"
       content="
       You touch a creature. 
       The creature's jump distance is tripled until the spell ends.
+      "
+    ></GlossaryCard> */}
+    <GlossaryCard
+      title="Dalereckoning (DR)"
+      content="
+      Dalereckoning is taken from the Year of Sunrise, 1 DR, when the Standing Stone was raised by the elves of Cormanthyr and the human Dalesfolk. 
+      Since this time, humans were permitted by the Elven Court to settle in the more open regions of the forests. 
+      In some texts, primarily those which do not have direct ties to Dales history, Dalereckoning is called Freeman's Reckoning (FR). 
+      The calendar is widely used in Faerûn but has not spread beyond its shores.'
       "
     ></GlossaryCard>
   </Layout>
