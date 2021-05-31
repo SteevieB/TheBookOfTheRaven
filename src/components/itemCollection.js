@@ -106,7 +106,7 @@ class GoldenRing extends React.Component {
     return (
       <Item
         title="Golden Ring"
-        content="A golden signet ring with an imprint of a deer. The metal is a bit scratched and dented."
+        content="A golden signet ring with an imprint of a stag. The metal is a bit scratched and dented."
       >
         <StaticImage src="../images/items/gold-ring.png"></StaticImage>
       </Item>
@@ -200,12 +200,74 @@ class Saddle extends React.Component {
   }
 }
 
+class SpellScrollCure extends React.Component {
+  render() {
+    return (
+      <Item
+        title="Scroll Cure Wounds (3rd Level)"
+        subTitle="
+          This scroll contains Cure Wounds of 3rd level."
+        // The spell's saving throw DC is 15 and attack bonus is +7."
+        content="You’ve been studying this spell so long you’re sweating with the intense intellectual effort, but now you think you have enough of an understanding to cast it."
+      >
+        <StaticImage src="../images/items/scroll.png"></StaticImage>
+      </Item>
+    )
+  }
+}
+
+class PotionOfSpeed extends React.Component {
+  render() {
+    return (
+      <Item
+        title="Potion of Speed"
+        content="When you drink this potion, you gain the effect of the haste spell for 1 minute (no concentration required). The potion's yellow fluid is streaked with black and swirls on its own."
+      >
+        <StaticImage src="../images/items/potion.png"></StaticImage>
+      </Item>
+    )
+  }
+}
+
+class PotionOfMindReading extends React.Component {
+  render() {
+    return (
+      <Item
+        title="Potion of Mind Reading"
+        content="
+        When you drink this potion, you gain the effect of the detect thoughts spell (save DC 13). 
+        The potion's dense, purple liquid has an ovoid cloud of pink floating in it."
+      >
+        <StaticImage src="../images/items/potion-of-mindreading.png"></StaticImage>
+      </Item>
+    )
+  }
+}
+
+class CloakOfBillowing extends React.Component {
+  render() {
+    return (
+      <Item
+        title="Cloak of Billowing"
+        content="
+        While wearing this cloak, you can use a bonus action to make it billow dramatically."
+      >
+        <StaticImage src="../images/items/cloak-of-billowing.png"></StaticImage>
+      </Item>
+    )
+  }
+}
+
 const items = [
   // <BookOfRaven />,
   // <BusinessCard />,
   // <MapOfMystery />,
   <Coins />,
   <Rations />,
+  // <SpellScrollCure />,
+  // <CloakOfBillowing />,
+  // <PotionOfSpeed />,
+  // <PotionOfMindReading />,
   // <RustyKey />,
   // <Amulett />,
   // <GoldenRing />,

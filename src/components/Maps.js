@@ -93,6 +93,19 @@ class MapChaletOG2 extends React.Component {
   }
 }
 
+class MapOfTheGraveyard extends React.Component {
+  render() {
+    return (
+      <>
+        <h1 className="p-4 text-2xl font-bold text-highlight-red">
+          A graveyard in Shadowfell
+        </h1>
+        <StaticImage src="../images/maps/graveyard.png"></StaticImage>
+      </>
+    )
+  }
+}
+
 class MapOfTheWorld extends React.Component {
   render() {
     return (
@@ -109,6 +122,7 @@ class MapOfTheWorld extends React.Component {
 export {
   MapOfMystery,
   MapChaletBrantifax,
+  MapOfTheGraveyard,
   MapMausoleum,
   MapChaletUG,
   MapChaletEG,
