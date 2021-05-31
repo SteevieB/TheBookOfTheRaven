@@ -10,23 +10,14 @@ const Glossary = () => (
     <h1 className="p-4 text-2xl text-highlight-red">
       A small collection of common knoledge (might expand over time...)
     </h1>
-    <GlossaryCard
+    {/* <GlossaryCard
       title="The Book of the Raven"
       subTitle="The diary of a girl" //Heluthe
       content="
-      This small, leather-bound journal holds the ruminations and descriptions of everyday life of a young girl who stumbled upon some secrets while still in the throes of pubescence. 
+      This small, leather-bound journal holds the ruminations and descriptions of everyday life of a young girl who stumbled upon some secrets while still in the throes of pubescence.
       Amidst the doodles and many melodramatic asides, dark discoveries lay nestled within these pages—for those patient enough to unearth them.
       Can anything of this weight be possibly carried by a raven?"
-
-      // Ein Augenzeugenbericht über einen Reitunfall der Autorin und Anschließender Rekonvaleszenz bei den Vistani.
-      // Während diese zur Genesung von bei den 'Planar Travellers' - den Vistani - aufgenommen wurde entstand mit dem Fahrenden Volk eine Freundschaft.
-      // Das Buch erzählt etwa drei Monate in der die Autorin und ihr Pferd die Vistani begleiten. Die meiste Zeit verbringt sie liegend in einem der Wagen.
-      // Obwohl etwa ein Dutzend der Vistani ausführlich in dem Schriftstück beschrieben werden, werden nur zwei mit Namen genannt:
-      // Drasha, ein Mädchen welches das verwundete Bein der Autorin mit Bandagen und Wickeln versorgte und Darzin, ein einarmiger Junge mit einer furchtbaren Angst vor Wölfen,
-      // der wunderschöne Lieder sang um von Leid und Schmerzen abzulenken.
-      // Das Buch gibt eine detaillierte Sicht über das Leben der Vistani, deren Musik und Essen besonders hervorgehoben wird.
-      // Auch die Überlandreise wird beschrieben, sei es auch aus Sicht eines Passagiers, der sich die meiste Zeit innerhalb einer der Wagen aufhielt.
-    />
+    /> */}
     {/* <GlossaryCard
       title="Heluthe"
       subTitle="One of the Brantifax's daughters"
@@ -49,6 +40,31 @@ const Glossary = () => (
       "
     />
      */}
+    {/* <GlossaryCard
+      title="The servant's journal"
+      content="
+      Lord Brantfax' state is getting worse by the day.
+      After the death of Brorn he started sleepwalking even more.
+      Nearly every night he's searching for him.
+      Yesterday he fell into the well.
+      We did what we could but it was too late.
+      What a loss shortly after Heluthe died.
+      Marty thinks he can still hear the Baron at night.
+      I also wake up every hour at least once.
+      Is it the house driving all of us mad?
+      "
+    /> */}
+    {/* <GlossaryCard
+      title="The baron's journal"
+      content="
+      'Brorn is really a charm of luck.
+      I really can't imagine hunting without him.'
+      A few passages later:
+      'If only my wife would show more passion for this honorable sport!
+      After the loss of Sylphene and now Heluthe she should be with me at last.'
+      After the last full entry someone tried to write something into the journal but there's just a lot of stains and smeared ink.
+      "
+    /> */}
     {/* <GlossaryCard
       title="Shadowfell"
       subTitle="The Shadowfell, also known as the Plane of Shadow, is one of the planes of existence in various cosmological models."
@@ -108,9 +124,29 @@ const Glossary = () => (
       title="Bless (Spell)"
       subTitle="1st Lvl | Duration: 1min"
       content="
-      Whenever you make an attack roll or a saving throw before the spell ends, you can roll a d4 and add the number rolled to the attack roll or saving throw.'
+      Whenever you make an attack roll or a saving throw before the spell ends, you can roll a d4 and add the number rolled to the attack roll or saving throw.
       "
-    ></GlossaryCard>
+    />
+    <GlossaryCard
+      title="Cure Wounds (Spell)"
+      subTitle="1st Lvl | Duration: -"
+      content="
+      A creature you touch regains a number of hit points equal to 1d8 + your spellcasting ability modifier.
+      This spell has no effect on undead or constructs.
+      At Higher Levels. When you cast this spell using a spell slot of 2nd level or higher, the healing increases by 1d8 for each slot level above 1st.
+
+      "
+    />
+    <GlossaryCard
+      title="Haste (Spell)"
+      subTitle="3rd Lvl | Duration: 1min"
+      content="
+      Choose a willing creature that you can see within range.
+      Until the spell ends, the target's speed is doubled, it gains a +2 bonus to AC, it has advantage on Dexterity saving throws, and it gains an additional action on each of its turns. 
+      That action can be used only to take the Attack (one weapon attack only), Dash, Disengage, Hide, or Use an Object action.
+      When the spell ends, the target can't move or take actions until after its next turn, as a wave of lethargy sweeps over it.
+      "
+    />
     {/* <GlossaryCard
       title="Potion of Mind Reading"
       content="
@@ -118,7 +154,7 @@ const Glossary = () => (
       The potion's dense, purple liquid has an ovoid cloud of pink floating in it.'
       "
     ></GlossaryCard> */}
-    {/* <GlossaryCard
+    <GlossaryCard
       title="Detect Thoughts (Spell)"
       subTitle="2nd Lvl | Duration: 1min"
       content="
@@ -138,7 +174,7 @@ const Glossary = () => (
       You can't detect a creature with an Intelligence of 3 or lower or one that doesn't speak any language.
       Once you detect the presence of a creature in this way, you can read its thoughts for the rest of the duration as described above, even if you can't see it, but it must still be within range.
       "
-    ></GlossaryCard> */}
+    />
     {/* <GlossaryCard
       title="Jump (Spell)"
       subTitle="1st Lvl | Duration: 1min | 1 Action"
@@ -146,16 +182,29 @@ const Glossary = () => (
       You touch a creature. 
       The creature's jump distance is tripled until the spell ends.
       "
-    ></GlossaryCard> */}
+    /> */}
+    <GlossaryCard
+      title="Spell Scrolls"
+      content="
+        A spell scroll bears the words of a single spell, written in a mystical cipher. 
+        If the spell is on your class’s spell list, you can read the scroll and cast its spell without providing any material components. 
+        Otherwise, the scroll is unintelligible. 
+        Casting the spell by reading the scroll requires the spell’s normal casting time. 
+        Once the spell is cast, the words on the scroll fade, and it crumbles to dust. 
+        If the casting is interrupted, the scroll is not lost.
+        If the spell is on your class’s spell list but of a higher level than you can normally cast, you must make an ability check using your spellcasting ability to determine whether you cast it successfully. 
+        The DC equals 10 + the spell’s level. On a failed check, the spell disappears from the scroll with no other effect.
+      "
+    />
     <GlossaryCard
       title="Dalereckoning (DR)"
       content="
       Dalereckoning is taken from the Year of Sunrise, 1 DR, when the Standing Stone was raised by the elves of Cormanthyr and the human Dalesfolk. 
       Since this time, humans were permitted by the Elven Court to settle in the more open regions of the forests. 
       In some texts, primarily those which do not have direct ties to Dales history, Dalereckoning is called Freeman's Reckoning (FR). 
-      The calendar is widely used in Faerûn but has not spread beyond its shores.'
+      The calendar is widely used in Faerûn but has not spread beyond its shores.
       "
-    ></GlossaryCard>
+    />
   </Layout>
 )
 

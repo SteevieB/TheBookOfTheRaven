@@ -186,7 +186,9 @@ const encounters = [
   },
   {
     name: "Shadow Crossing encounter 2-5",
-    enemies: <div className="text-lg font-bold text-gray-900">4x3 Ghouls</div>,
+    enemies: (
+      <div className="text-lg font-bold text-gray-900">(3-4)x3 Ghouls</div>
+    ),
     difficulty: "medium",
     description:
       "Perhaps this wretched thing was once human, but hunger replaced humanity. Its withered body seems composed of little more than bruised skin stretched over sinew and bone, but its bulbous belly juts out and sloshes from side to side as it moves. Filth and gore stain its claw-like hands and wizened face. And eyes as black as pitch weep a tarry substance, and a black tongue slithers from its fanged mouth to lick the tears from its cracked lips.",
@@ -233,6 +235,67 @@ export function ListEncounters() {
         </li>
       ))}
     </ul>
+  )
+}
+
+export function ScrollMishap() {
+  return (
+    <Collapsible
+      className="text-lg font-bold text-gray-900 ml-3"
+      trigger="Scroll Mishaps"
+    >
+      <ul className="divide-y divide-gray-200">
+        <li className="py-4 flex">
+          <span className="px-4 font-bold">1</span>
+          <span>
+            A surge of magical energy deals the caster 1d6 force damage per
+            level of the spell.
+          </span>
+        </li>
+        <li className="py-4 flex">
+          <span className="px-4 font-bold">2</span>
+          <span>
+            The spell affects the caster or an ally (determined randomly)
+            instead of the intended target, or it affects a random target nearby
+            if the caster was the intended target.
+          </span>
+        </li>
+        <li className="py-4 flex">
+          <span className="px-4 font-bold">3</span>
+          <span>
+            The spell affects a random location within the spell’s range.
+          </span>
+        </li>
+        <li className="py-4 flex">
+          <span className="px-4 font-bold">4</span>
+          <span>
+            The spell’s effect is contrary to its normal one, but neither
+            harmful nor beneficial. For instance, a fireball might produce an
+            area of harmless cold.
+          </span>
+        </li>
+        <li className="py-4 flex">
+          <span className="px-4 font-bold">5</span>
+          <span>
+            The caster suffers a minor but bizarre effect related to the spell.
+            Such effects last only as long as the original spell’s duration, or
+            1d10 minutes for spells that take effect instantaneously. For
+            example, a fireball might cause smoke to billow from the caster’s
+            ears for 1d10 minutes.
+          </span>
+        </li>
+        <li className="py-4 flex">
+          <span className="px-4 font-bold">6</span>
+          <span>
+            The spell activates after 1d12 hours. If the caster was the intended
+            target, the spell takes effect normally. If the caster was not the
+            intended target, the spell goes off in the general direction of the
+            intended target, up to the spell’s maximum range, if the target has
+            moved away.
+          </span>
+        </li>
+      </ul>
+    </Collapsible>
   )
 }
 

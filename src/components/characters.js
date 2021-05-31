@@ -193,16 +193,16 @@ const Andreas = ({ init }) => {
         <div className="w-full">
           <Character2
             playerName={playerName}
-            characterName="Character"
-            alignement="Lawful Neutral"
-            ac="15"
+            characterName="Mörgänsër"
+            alignement="Chaotic Neutral"
+            ac="12"
             lvl="3"
-            hp="27"
-            spd="25"
+            hp="32"
+            spd="30"
             characterClass="Barbarian"
-            race="Half-Orc"
+            race="Human"
           />
-          <Abilities2 str="16" dex="14" con="16" int="8" wis="10" cha="10" />
+          <Abilities2 str="16" dex="10" con="14" int="12" wis="14" cha="8" />
         </div>
         <span className="place-self-center text-center text-lg font-bold font-noto">
           Init: {initiative}
@@ -305,16 +305,16 @@ const HungNi = ({ init }) => {
         <div className="w-full">
           <Character2
             playerName={playerName}
-            characterName="Character"
-            alignement="Lawful Neutral"
-            ac="13"
+            characterName="Faith"
+            alignement="Neutral Good"
+            ac="18"
             lvl="3"
-            hp="27"
-            spd="30"
-            characterClass="Ranger"
-            race="Human"
+            hp="24"
+            spd="20"
+            characterClass="Cleric"
+            race="Tiefling"
           />
-          <Abilities2 str="10" dex="16" con="14" int="12" wis="16" cha="9" />
+          <Abilities2 str="13" dex="10" con="14" int="9" wis="14" cha="15" />
         </div>
         <span className="place-self-center text-center text-lg font-bold font-noto">
           Init: {initiative}
