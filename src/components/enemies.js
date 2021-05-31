@@ -78,6 +78,31 @@ class Wight extends React.Component {
     )
   }
 }
+
+class Warhorse extends React.Component {
+  render() {
+    return (
+      <>
+        <div>
+          <StaticImage src="../images/creatures/warhorse-skeleton.png"></StaticImage>
+        </div>
+      </>
+    )
+  }
+}
+
+class Spider extends React.Component {
+  render() {
+    return (
+      <>
+        <div>
+          <StaticImage src="../images/creatures/spider.png"></StaticImage>
+        </div>
+      </>
+    )
+  }
+}
+
 class Chalet extends React.Component {
   render() {
     return (
@@ -99,4 +124,6 @@ export {
   Gargoyle,
   Ghoul,
   Wight,
+  Warhorse,
+  Spider,
 }

@@ -95,6 +95,16 @@ class StatBlockSpider extends React.Component {
     )
   }
 }
+class StatBlockWolfSpider extends React.Component {
+  render() {
+    return (
+      <>
+        <StaticImage src="../images/creatures/statblocks/giant-wolf-spider.png"></StaticImage>
+      </>
+    )
+  }
+}
+
 class StatBlockBoar extends React.Component {
   render() {
     return (
@@ -109,10 +119,10 @@ const encounters = [
     name: "Forest encounter 1",
     enemies: (
       <div className="text-lg font-bold font-medium text-gray-900">
-        1 Giant Boar
+        2 Giant Boars
       </div>
     ),
-    difficulty: "easy",
+    difficulty: "medium",
     description:
       "Ivory tusks glint malevolently in the dim light, and as the boar moves into clearer view, you first notice its immense size, and then the wiry muscles rippling beneath its dark skin. The red eyes that study you burn with distrust and abhorrence, and the creature seems restless, ready to strike. You know that there will be no reasoning with the enormous beast before you.",
     statblocks: <StatBlockBoar />,
@@ -121,13 +131,22 @@ const encounters = [
     name: "Forest encounter 2",
     enemies: (
       <div className="text-lg font-bold font-medium text-gray-900">
-        2 Giant Spiders
+        2 Giant Spiders, 3 Giant Wolf Spiders
       </div>
     ),
     difficulty: "easy",
     description:
       "An alien light glitters across the eight eyes of the giant spider, its size making it look sinister and monstrous. So enormous that you can make out the individual hairs on its legs, it has no need to resort to insects for its wriggling meals.",
-    statblocks: <StatBlockSpider />,
+    statblocks: (
+      <>
+        <StatBlockSpider />
+        <div className="w-full">
+          <div className="w-cover">
+            <StatBlockWolfSpider />
+          </div>
+        </div>
+      </>
+    ),
   },
   {
     name: "Graveyard encounter 1",
@@ -181,6 +200,18 @@ const encounters = [
       "The humanoid creature’s mummified flesh stretches taught against a warped and twisted skeleton. It smells of rot and decay, and fresh blood. Jagged teeth fill a lipless mouth, from which issues an otherworldly growl. The creature’s long, skeletal limbs end in wicked, needle-like claws, and its eyes burn white-hot as it lunges forward.",
     statblocks: <StatBlockWight />,
   },
+  {
+    name: "Shadow Crossing encounter 7",
+    enemies: (
+      <div className="text-lg font-bold text-gray-900">
+        3 Warhorse Skeletons
+      </div>
+    ),
+    difficulty: "easy",
+    description:
+      "The clatter of their hooves rings hollow. The fleshless articulation before you is surely lighter than living horses, but it’s also as if the skeletal creature’s feet carry with them the echoes of a tomb. Their cracked skulls rear and their jaws move, but they make no sound other than the rattle and creak of bones.",
+    statblocks: <StatBlockWarhorseSkeleton />,
+  },
 ]
 
 export function ListEncounters() {
@@ -196,7 +227,7 @@ export function ListEncounters() {
               <p className="text-md font-medium text-gray-900 rounded-tr-lg p-2 text-justify bg-red-300">
                 {encounter.description}
               </p>
-              {encounter.statblocks}
+              <div className="cover">{encounter.statblocks}</div>
             </Collapsible>
           </div>
         </li>

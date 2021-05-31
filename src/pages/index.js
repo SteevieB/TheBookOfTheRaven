@@ -12,6 +12,8 @@ import {
   Ghoul,
   Wight,
   Chalet,
+  Warhorse,
+  Spider,
 } from "../components/enemies"
 
 import "../styles/global.css"
@@ -28,9 +30,10 @@ const IndexPage = () => (
       {/* <Gargoyle /> */}
       {/* <Ghoul /> */}
       {/* <Wight /> */}
+      {/* <Spider /> */}
     </div>
     <Greeter />
-    {/* <Goodbye /> */}
+    <Goodbye />
   </Layout>
 )
 
