@@ -205,6 +205,12 @@ const Glossary = () => (
       The calendar is widely used in Faerûn but has not spread beyond its shores.
       "
     />
+    <GlossaryCard
+      title="Tomorrow (noun)"
+      content="
+      A mystical place where 99% of all human productivity, motivation and achievement ist stored
+      "
+    />
   </Layout>
 )
 

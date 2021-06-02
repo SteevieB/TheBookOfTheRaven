@@ -12,6 +12,7 @@ import {
   StatBlockSpecter,
   StatBlockGargoyle,
   StatBlockWight,
+  ListPlaces,
   ListEncounters,
   ScrollMishap,
 } from "../components/dmStuff"
@@ -29,6 +30,7 @@ class Map extends React.Component {
     return (
       <Layout>
         <Seo title="DM's Notes" />
+        <ListPlaces />
         <ListEncounters />
         <ScrollMishap />
         {/* <MapOfMysteryDM /> */}

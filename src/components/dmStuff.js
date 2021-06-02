@@ -299,6 +299,97 @@ export function ScrollMishap() {
   )
 }
 
+export function ListPlaces() {
+  return (
+    <Collapsible
+      className="text-lg font-bold text-gray-900 ml-3"
+      trigger="Locations"
+    >
+      <ul className="divide-y divide-gray-200">
+        <li className="py-4 grid grid-cols-6">
+          <span className="px-4 font-bold">Forest Trail</span>
+          <p className="text-justify col-span-5">
+            Sunlight streams through tall trees to dapple this rocky,
+            root-crossed pathway wending through the woodland. Flowering bushes,
+            buzzing with bees, stretch branches out over the path in colorful
+            arcs, while vibrant green ferns crowd in their shadows near the
+            trail. The whole effect is one of breathtaking beauty, as if nature
+            created a nuptial path for the marriage of some forest spirits.
+          </p>
+        </li>
+        <li className="py-4  grid grid-cols-6">
+          <span className="px-4 font-bold">Outskirts of a Small Village</span>
+          <p className="text-justify col-span-5">
+            You smell the place before you see it. The unmistakable odor of
+            civilization: woodsmoke, cow dung, and the stink of pigs. You round
+            the bend and see thatched roofs on low buildings scattered around
+            muddy fields. From somewhere on the other side of the village, you
+            hear dogs barking.
+          </p>
+        </li>
+        <li className="py-4  grid grid-cols-6">
+          <span className="px-4 font-bold">Wytchway</span>
+          <p className="text-justify col-span-5">
+            Silence reigns over this fog-shrouded hamlet, seemingly in perfect
+            order, but utterly devoid of any villagers. Though the huts and
+            houses remain mostly intact, doors hang wide open, and aside from
+            the occasional wild critter, there is no life within. A bucket used
+            to draw well water lies on its side on the ground, water spilled out
+            over the soil, still damp. The ashes in a nearby hearth are cold
+            with a few glowing embers visible to a watchful eye.
+          </p>
+        </li>
+        <li className="py-4  grid grid-cols-6">
+          <span className="px-4 font-bold">Chalet Brantifax</span>
+          <p className="text-justify col-span-5">
+            The manorhouse may have once stood tall and impressive in its
+            splendor, but now sits empty and crumbling. Paint peels in moldy
+            strips, and columns that once bore the weight of the structure lean,
+            cracks spiderwebbing down their lengths. The house sags, groaning in
+            the wind that whistles through shattered windows and pockmarked
+            siding. Inside, the house sits cold, dark, and empty, save a faded
+            family portrait, the faces of the occupants worn away with age and
+            exposure. They stare, faceless, into the darkness.
+          </p>
+        </li>
+        <li className="py-4  grid grid-cols-6">
+          <span className="px-4 font-bold">Attic of Chalet Brantifax</span>
+          <p className="text-justify col-span-5">
+            You ascend the stairs to the attic and feel them creak beneath you.
+            The door is narrow and swings open with a whine of its ancient
+            hinges. Beyond, the attic stands dark and silent. Piles of crates
+            and barrels dominate every corner, and old furniture sits draped
+            with white cloth. Dust covers every surface like a thick dusting of
+            snow, and as you round a corner, you almost cry out at the figure
+            standing before you—before you realize it’s a mannequin.
+          </p>
+        </li>
+        <li className="py-4  grid grid-cols-6">
+          <span className="px-4 font-bold">Portal to Shadowfell</span>
+          <p className="text-justify col-span-5">
+            A wide white cloud hangs in the open grave, skirting the sides.
+            Thick ropey strands of fog curl and twist around some obscured
+            point, like a complex knot endlessly tightening. You become
+            conscious of a something like a wind. Though no breeze ruffles you,
+            your body feels pushes toward this strange mist.
+          </p>
+        </li>
+        <li className="py-4  grid grid-cols-6">
+          <span className="px-4 font-bold">Shadowfell Cemetery</span>
+          <p className="text-justify col-span-5">
+            Mist shrouds the loamy earth. Tombstones, etched with names long
+            faded and forgotten, line the horizon, tilting at odd angles.
+            Moonlight pierces the gloom, lending a silver quality to the
+            ever-present fog. In the distance, predators howl, their cries
+            distorted over distance and echoing into the night. Trees creak, the
+            wind wheezes, and something moves behind you.
+          </p>
+        </li>
+      </ul>
+    </Collapsible>
+  )
+}
+
 export {
   StatBlockScarecrow,
   StatBlockCrawlingClaw,
