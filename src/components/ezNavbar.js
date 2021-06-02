@@ -17,11 +17,11 @@ const Navbar = () => (
       <Link className="hover:underline" to="/map">
         Maps
       </Link>
-      <Link className="hover:underline" to="/glossary">
-        Glossary
-      </Link>
       <Link className="hover:underline" to="/items">
         Inventory
+      </Link>
+      <Link className="hover:underline" to="/glossary">
+        Glossary
       </Link>
     </div>
   </nav>

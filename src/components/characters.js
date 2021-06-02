@@ -1,3 +1,4 @@
+import { func } from "prop-types"
 import * as React from "react"
 import "../styles/global.css"
 
@@ -161,29 +162,6 @@ const CharacterWrapper = ({ children }) => {
   )
 }
 
-const DefaultCharacter = ({ init }) => {
-  const playerName = "Default"
-  const initiative = init
-  return (
-    <>
-      <CharacterWrapper>
-        <div className="w-full">
-          <Character
-            playerName={playerName}
-            characterName="Character"
-            ac="12"
-            lvl="0"
-            characterClass="Fighter"
-            race="Human"
-          />
-          <Abilities str="8" dex="8" con="8" int="8" wis="8" cha="8" />
-        </div>
-        <span className="text-lg font-bold">Init: {initiative}</span>
-      </CharacterWrapper>
-    </>
-  )
-}
-
 const Andreas = ({ init }) => {
   const playerName = "Andreas"
   const initiative = init
@@ -249,16 +227,16 @@ const Julian = ({ init }) => {
         <div className="w-full">
           <Character2
             playerName={playerName}
-            characterName="Character"
-            alignement="Lawful Neutral"
-            ac="13"
+            characterName="Aegonis Filandrion"
+            alignement="Neutral"
+            ac="18"
             lvl="3"
-            hp="27"
-            spd="30"
-            characterClass="Druid"
-            race="Hill Dwarf"
+            hp="25"
+            spd="40"
+            characterClass="Paladin"
+            race="Centaur"
           />
-          <Abilities2 str="8" dex="14" con="16" int="12" wis="16" cha="8" />
+          <Abilities2 str="16" dex="10" con="12" int="12" wis="12" cha="14" />
         </div>
         <span className="place-self-center text-center text-lg font-bold font-noto">
           Init: {initiative}
@@ -277,16 +255,16 @@ const Johannes = ({ init }) => {
         <div className="w-full">
           <Character2
             playerName={playerName}
-            characterName="Character"
-            alignement="Lawful Neutral"
-            ac="12"
+            characterName="Tonatiuh"
+            alignement="Lawful Good"
+            ac="18"
             lvl="3"
-            hp="27"
+            hp="31"
             spd="30"
             characterClass="Fighter"
-            race="Human"
+            race="Goliath"
           />
-          <Abilities2 str="10" dex="11" con="12" int="13" wis="14" cha="15" />
+          <Abilities2 str="16" dex="8" con="16" int="10" wis="14" cha="10" />
         </div>
         <span className="place-self-center text-center text-lg font-bold font-noto">
           Init: {initiative}
@@ -366,14 +344,6 @@ const Players = ({ players }) => {
 
 const players = [Andreas, Sumsi, Johannes, Julian, HungNi, Fabi]
 
-export {
-  DefaultCharacter,
-  Andreas,
-  Sumsi,
-  Johannes,
-  Julian,
-  HungNi,
-  Fabi,
-  Players,
-  players,
-}
+players.sort((a, b) => a.init - b.init)
+
+export { Andreas, Sumsi, Johannes, Julian, HungNi, Fabi, Players, players }

@@ -16,9 +16,9 @@ const CharacterPage = () => (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
       <Andreas init="" />
       <Sumsi init="" />
-      <Johannes init="12" />
-      <Julian init="11" />
-      <HungNi init="10" />
+      <Johannes init="" />
+      <Julian init="" />
+      <HungNi init="" />
       <Fabi init="" />
     </div>
   </Layout>
