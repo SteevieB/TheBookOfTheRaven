@@ -21,15 +21,17 @@ import "../styles/global.css"
 const IndexPage = () => (
   <Layout>
     <Seo title="Home" />
-    <div className="w-full md:w-4/5 my-1 mx-auto">
+    <div className="w-full md:w-4/5 my-1 mx-auto flex justify-between">
       {/* <Chalet /> */}
       {/* <CrawlingClaw /> */}
       {/* <Scarecrow /> */}
+      {/* <CrawlingClaw /> */}
       {/* <Poltergeist /> */}
       {/* <Wereraven /> */}
       {/* <Gargoyle /> */}
       {/* <Ghoul /> */}
       {/* <Wight /> */}
+      {/* <Warhorse /> */}
       {/* <Spider /> */}
     </div>
     <Greeter />
