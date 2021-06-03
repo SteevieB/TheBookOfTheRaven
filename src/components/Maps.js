@@ -13,9 +13,7 @@ class MapOfMystery extends React.Component {
         <h1 className="p-4 text-2xl font-bold text-highlight-red">
           Mysteriöse Karte
         </h1>
-        <Link to={jamboardLink} target="_blank">
-          <StaticImage src="../images/maps/map.png"></StaticImage>
-        </Link>
+        <StaticImage src="../images/maps/map.png"></StaticImage>
       </>
     )
   }
@@ -133,9 +131,7 @@ class MapOfTheWorld extends React.Component {
         <h1 className="p-4 text-2xl font-bold text-highlight-red">
           The sword coast
         </h1>
-        <Link to={jamboardLink} target="_blank">
-          <StaticImage src="../images/maps/world-map.png"></StaticImage>
-        </Link>
+        <StaticImage src="../images/maps/world-map.png"></StaticImage>
       </>
     )
   }
