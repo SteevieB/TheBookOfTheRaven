@@ -10,18 +10,22 @@ import {
   MapChaletEG,
   MapChaletOG,
   MapChaletOG2,
+  MapOfTheGraveyard,
+  MapOfTheWorld,
 } from "../components/Maps"
 
 const Map = () => (
   <Layout>
     <Seo title="Maps" />
-    <MapOfMystery />
-    <MapChaletBrantifax />
-    <MapMausoleum />
-    <MapChaletUG />
-    <MapChaletEG />
-    <MapChaletOG />
-    <MapChaletOG2 />
+    {/* <MapOfMystery /> */}
+    {/* <MapChaletBrantifax /> */}
+    {/* <MapChaletUG /> */}
+    {/* <MapChaletEG /> */}
+    {/* <MapChaletOG /> */}
+    {/* <MapChaletOG2 /> */}
+    {/* <MapMausoleum /> */}
+    {/* <MapOfTheGraveyard /> */}
+    <MapOfTheWorld />
   </Layout>
 )
 

@@ -1,21 +1,26 @@
 import * as React from "react"
-
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import {
-  DefaultCharacter,
-  Sumsi,
   Andreas,
+  Sumsi,
+  Johannes,
   Julian,
-} from "../components/character"
+  HungNi,
+  Fabi,
+} from "../components/characters"
 
 const CharacterPage = () => (
   <Layout>
     <Seo title="Characters" />
-    <DefaultCharacter init="15" />
-    <Sumsi init="14" />
-    <Andreas init="12" />
-    <Julian init="8" />
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+      <Andreas init="" />
+      <Sumsi init="" />
+      <Johannes init="" />
+      <Julian init="" />
+      <HungNi init="" />
+      <Fabi init="" />
+    </div>
   </Layout>
 )
 

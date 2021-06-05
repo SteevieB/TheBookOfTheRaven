@@ -16,7 +16,7 @@ class Greeter extends React.Component {
         "
           >
             <div className="w-1/2 truncate -mt-6 sm:-mt-0 mx-auto">
-              <StaticImage src="../images/raven-icon.png"></StaticImage>
+              <StaticImage src="../images/assets/raven-icon.png"></StaticImage>
             </div>
           </PostCard>
         </div>
@@ -28,7 +28,7 @@ class Goodbye extends React.Component {
   render() {
     return (
       <>
-        <div className="w-full sm:w-3/5 md:w-2/5 flex mx-auto mt-6 sm:mt-4">
+        <div className="w-full sm:w-3/5 md:w-2/5 flex mx-auto mt-6 sm:mt-4 hidden">
           <PostCard
             title="Farewell folks of courage."
             subTitle="May the raven's blessing always guard your ways."
@@ -38,7 +38,7 @@ class Goodbye extends React.Component {
         "
           >
             <div className="w-3/5 truncate mt-8 mx-auto">
-              <StaticImage src="../images/raven-bye.png"></StaticImage>
+              <StaticImage src="../images/assets/raven-bye.png"></StaticImage>
             </div>
           </PostCard>
         </div>

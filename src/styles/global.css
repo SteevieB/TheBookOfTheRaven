@@ -3,4 +3,13 @@
 @tailwind utilities;
 
 /* @import url("https://fonts.googleapis.com/css?family=Roboto|Sofia|Sacramento"); */
-@import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&family=Roboto:wght@100;500;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Reenie+Beanie&family=Roboto:wght@100;500;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap")
+.textured {
+  background: url(../images/assets/bg-top-w.png) no-repeat top,
+    url(../images/assets/bg-bottom-w.png) no-repeat bottom,
+    url(../images/assets/bg-middle.jpg) repeat-y center;
+  /* background-color: transparent; */
+  background-size: 300%;
+  padding: 4rem 1rem;
+}
