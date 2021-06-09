@@ -52,7 +52,7 @@ class Coins extends React.Component {
     return (
       <Item
         title="Party funds"
-        subTitle="25 Golden Coins"
+        subTitle="24 Golden Coins, 4 Silver Coins"
         content="Gold you acquired in your previous adventures"
       >
         <StaticImage src="../images/items/coins.png"></StaticImage>
@@ -259,24 +259,24 @@ class CloakOfBillowing extends React.Component {
 }
 
 const items = [
-  // <BookOfRaven />,
-  // <BusinessCard />,
-  // <MapOfMystery />,
+  <BookOfRaven />,
+  <BusinessCard />,
+  <MapOfMystery />,
   <Coins />,
   <Rations />,
-  // <SpellScrollCure />,
-  // <CloakOfBillowing />,
+  <SpellScrollCure />,
+  <CloakOfBillowing />,
   // <PotionOfSpeed />,
   // <PotionOfMindReading />,
   // <RustyKey />,
-  // <Amulett />,
+  <Amulett />,
   // <GoldenRing />,
   // <Journal />,
-  // <StuddedLeatherArmor />,
+  <StuddedLeatherArmor />,
   // <RingOfJumping />,
   // <Saddle />,
-  // <HeavyCrossbow />,
-  // <CrossbowBolts />,
+  <HeavyCrossbow />,
+  <CrossbowBolts />,
 ]
 
 export function ListItems() {

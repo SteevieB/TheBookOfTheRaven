@@ -10,14 +10,14 @@ const Glossary = () => (
     <h1 className="p-4 text-2xl text-highlight-red">
       A small collection of common knoledge (might expand over time...)
     </h1>
-    {/* <GlossaryCard
+    <GlossaryCard
       title="The Book of the Raven"
       subTitle="The diary of a girl" //Heluthe
       content="
       This small, leather-bound journal holds the ruminations and descriptions of everyday life of a young girl who stumbled upon some secrets while still in the throes of pubescence.
       Amidst the doodles and many melodramatic asides, dark discoveries lay nestled within these pages—for those patient enough to unearth them.
       Can anything of this weight be possibly carried by a raven?"
-    /> */}
+    />
     {/* <GlossaryCard
       title="Heluthe"
       subTitle="One of the Brantifax's daughters"
@@ -40,7 +40,7 @@ const Glossary = () => (
       "
     />
      */}
-    {/* <GlossaryCard
+    <GlossaryCard
       title="The servant's journal"
       content="
       Lord Brantfax' state is getting worse by the day.
@@ -53,7 +53,7 @@ const Glossary = () => (
       I also wake up every hour at least once.
       Is it the house driving all of us mad?
       "
-    /> */}
+    />
     {/* <GlossaryCard
       title="The baron's journal"
       content="
@@ -75,13 +75,13 @@ const Glossary = () => (
         Unlike the Feywild, it is a bleak, desolate place full of decay and death.'
       "
     ></GlossaryCard> */}
-    {/* <GlossaryCard
+    <GlossaryCard
       title="The Map of Mystery"
       subTitle="A map tucked between the pages of the Book of the Raven."
       content="
       It’s clear that the map was never part of the book to begin with. 
       "
-    ></GlossaryCard> */}
+    ></GlossaryCard>
     {/* <GlossaryCard
       title="Anil Zasperdes"
       subTitle="Zasperdes was a wereraven who had a gift for hiding things."

@@ -17,12 +17,12 @@ import {
 const Map = () => (
   <Layout>
     <Seo title="Maps" />
-    {/* <MapOfMystery /> */}
+    <MapOfMystery />
     {/* <MapChaletBrantifax /> */}
-    {/* <MapChaletUG /> */}
-    {/* <MapChaletEG /> */}
-    {/* <MapChaletOG /> */}
-    {/* <MapChaletOG2 /> */}
+    <MapChaletUG />
+    <MapChaletEG />
+    <MapChaletOG />
+    <MapChaletOG2 />
     {/* <MapMausoleum /> */}
     {/* <MapOfTheGraveyard /> */}
     <MapOfTheWorld />

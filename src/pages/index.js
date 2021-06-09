@@ -22,7 +22,7 @@ const IndexPage = () => (
   <Layout>
     <Seo title="Home" />
     <div className="w-full md:w-4/5 my-1 mx-auto flex justify-between">
-      {/* <Chalet /> */}
+      <Chalet />
       {/* <CrawlingClaw /> */}
       {/* <Scarecrow /> */}
       {/* <CrawlingClaw /> */}

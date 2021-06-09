@@ -14,6 +14,7 @@ class Greeter extends React.Component {
         You'll find additional resources in this player's companion.
         Please have a look around! The Website might update dependent on the party's progress in the game.
         "
+            content2="Soundtale Session: 25053"
           >
             <div className="w-1/2 truncate -mt-6 sm:-mt-0 mx-auto">
               <StaticImage src="../images/assets/raven-icon.png"></StaticImage>

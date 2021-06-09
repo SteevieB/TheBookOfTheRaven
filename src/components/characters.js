@@ -180,7 +180,7 @@ const Andreas = ({ init }) => {
             characterClass="Barbarian"
             race="Human"
           />
-          <Abilities2 str="16" dex="10" con="14" int="12" wis="14" cha="8" />
+          <Abilities2 str="16" dex="10" con="14" int="16" wis="10" cha="8" />
         </div>
         <span className="place-self-center text-center text-lg font-bold font-noto">
           Init: {initiative}
@@ -201,7 +201,7 @@ const Sumsi = ({ init }) => {
             playerName={playerName}
             characterName="Lan Hua 'Harmony'"
             alignement="Chaotic Good"
-            ac="13"
+            ac="14"
             lvl="3"
             hp="24"
             spd="30"
@@ -292,7 +292,7 @@ const HungNi = ({ init }) => {
             characterClass="Cleric"
             race="Tiefling"
           />
-          <Abilities2 str="13" dex="10" con="14" int="9" wis="14" cha="15" />
+          <Abilities2 str="13" dex="9" con="14" int="14" wis="14" cha="12" />
         </div>
         <span className="place-self-center text-center text-lg font-bold font-noto">
           Init: {initiative}
@@ -315,12 +315,12 @@ const Fabi = ({ init }) => {
             alignement="Neutral Good"
             ac="17"
             lvl="3"
-            hp="17"
+            hp="20"
             spd="30"
             characterClass="Sorcerer"
             race="Tortle"
           />
-          <Abilities2 str="12" dex="8" con="13" int="12" wis="16" cha="14" />
+          <Abilities2 str="12" dex="8" con="14" int="12" wis="14" cha="15" />
         </div>
         <span className="place-self-center text-center text-lg font-bold font-noto">
           Init: {initiative}
