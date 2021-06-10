@@ -8,7 +8,7 @@ class BookOfRaven extends React.Component {
   render() {
     return (
       <Item
-        title="Ein mysteriöses Buch"
+        title="A mysterious book"
         subTitle="Abgenutzter Ledereinband, vergilbte knittrige Seiten"
         content="Das Buch wurde vermutlich von einem Raben fallen gelassen."
         content2="Der Bericht hört abrupt auf der drittletzten Seite auf. Die letzten beiden Seiten sind leer."
@@ -36,9 +36,9 @@ class MapOfMystery extends React.Component {
   render() {
     return (
       <Item
-        title="Karte aus dem mysteriösen Buch"
-        subTitle="Vergilbte knittrige Karte"
-        content="Diese Karte war im Buch eingeklemmt."
+        title="The map which fell out of the book"
+        subTitle="A yellowed wrinkled map"
+        content="The map was stuck between the books pages"
         content2="Es scheint so, als zeige sie einen Weg zu einem Schatz(?). Die Webgeschreibung liegt in Reimform vor."
       >
         <StaticImage src="../images/items/map.png"></StaticImage>
