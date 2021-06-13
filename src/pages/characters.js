@@ -14,12 +14,12 @@ const CharacterPage = () => (
   <Layout>
     <Seo title="Characters" />
     <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
-      <Andreas init="6" />
-      <Sumsi init="23" />
-      <Johannes init="19" />
-      <Julian init="5" />
-      <HungNi init="4" />
-      <Fabi init="16" />
+      <Andreas init="18" />
+      <Sumsi init="20" />
+      <Johannes init="11" />
+      <Julian init="16" />
+      <HungNi init="10" />
+      <Fabi init="13" />
     </div>
   </Layout>
 )

@@ -74,14 +74,14 @@ const Glossary = () => (
         It exists as sort of counterpart to the Feywild, in the sense that it is a reflection, or 'echo', of the Prime Material Plane. 
         Unlike the Feywild, it is a bleak, desolate place full of decay and death.'
       "
-    ></GlossaryCard> */}
+    /> */}
     <GlossaryCard
       title="The Map of Mystery"
       subTitle="A map tucked between the pages of the Book of the Raven."
       content="
       It’s clear that the map was never part of the book to begin with. 
       "
-    ></GlossaryCard>
+    />
     {/* <GlossaryCard
       title="Anil Zasperdes"
       subTitle="Zasperdes was a wereraven who had a gift for hiding things."
@@ -91,7 +91,7 @@ const Glossary = () => (
       Anil tried to lure certain groups of suspicious travellers to come to the Chalet in order to check if the carry mighty or evil magic items. 
       If so the scarlet sash would snitch them and hide the items away.
       "
-    ></GlossaryCard> */}
+    /> */}
     {/* <GlossaryCard
       title="The Scarlet Sash"
       subTitle="A group of wereravens founded by Anil Zasperdes"
@@ -103,7 +103,7 @@ const Glossary = () => (
       The Scarlet Sash has eight members currently, though it has had as few as three and as many as twelve in the past. 
       Four members are present when the characters arrive at Chalet Brantifax: Madrina Natterask, Taspar Hatchhill, Rennick Groka, and Vinique.'
       "
-    ></GlossaryCard> */}
+    /> */}
     {/* <GlossaryCard
       title="The Wytchway"
       content="
@@ -111,7 +111,7 @@ const Glossary = () => (
       Its location is hard to decern without the advice of people living close by."
       // Silence reigns over this fog-shrouded hamlet, seemingly in perfect order, but utterly devoid of any villagers. Though the huts and houses remain mostly intact, doors hang wide open, and aside from the occasional wild critter, there is no life within. A bucket used to draw well water lies on its side on the ground, water spilled out over the soil, still damp. The ashes in a nearby hearth are cold with no glowing embers visible to a watchful eye.
       // "
-    ></GlossaryCard> */}
+    /> */}
 
     {/* <GlossaryCard
       title="Charm of Heroism"
@@ -119,7 +119,7 @@ const Glossary = () => (
       For 1 hour after drinking it, you gain 10 temporary hit points that last for 1 hour. 
       For the same duration, you are under the effect of the bless spell (no concentration required).'
       "
-    ></GlossaryCard> */}
+    /> */}
     <GlossaryCard
       title="Bless (Spell)"
       subTitle="1st Lvl | Duration: 1min"
@@ -147,13 +147,13 @@ const Glossary = () => (
       When the spell ends, the target can't move or take actions until after its next turn, as a wave of lethargy sweeps over it.
       "
     />
-    {/* <GlossaryCard
+    <GlossaryCard
       title="Potion of Mind Reading"
       content="
       When you drink this potion, you gain the effect of the detect thoughts spell (save DC 13). 
       The potion's dense, purple liquid has an ovoid cloud of pink floating in it.'
       "
-    ></GlossaryCard> */}
+    />
     <GlossaryCard
       title="Detect Thoughts (Spell)"
       subTitle="2nd Lvl | Duration: 1min"

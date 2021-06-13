@@ -14,7 +14,7 @@ class Greeter extends React.Component {
         You'll find additional resources in this player's companion.
         Please have a look around! The Website might update dependent on the party's progress in the game.
         "
-            content2="Soundtale Session: 36298"
+            content2="Soundtale Session: 48124"
           >
             <div className="w-1/2 truncate -mt-6 sm:-mt-0 mx-auto">
               <StaticImage src="../images/assets/raven-icon.png"></StaticImage>
@@ -65,7 +65,7 @@ class Recap extends React.Component {
             a group of people who try to steal and hide items of evil magick.
             They told you they have nothing to do with the house,
             they just found the location very convenient - remote and near a shadow crossing.
-            As they realized you're not a thread nor in posession of evil magick, 
+            As they realized you're not a thread nor in posession of evil magic, 
             they let you sleep in the house.
 
 
