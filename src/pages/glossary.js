@@ -65,7 +65,7 @@ const Glossary = () => (
       After the last full entry someone tried to write something into the journal but there's just a lot of stains and smeared ink.
       "
     /> */}
-    {/* <GlossaryCard
+    <GlossaryCard
       title="Shadowfell"
       subTitle="The Shadowfell, also known as the Plane of Shadow, is one of the planes of existence in various cosmological models."
       content="
@@ -74,7 +74,7 @@ const Glossary = () => (
         It exists as sort of counterpart to the Feywild, in the sense that it is a reflection, or 'echo', of the Prime Material Plane. 
         Unlike the Feywild, it is a bleak, desolate place full of decay and death.'
       "
-    /> */}
+    />
     <GlossaryCard
       title="The Map of Mystery"
       subTitle="A map tucked between the pages of the Book of the Raven."
@@ -82,7 +82,7 @@ const Glossary = () => (
       It’s clear that the map was never part of the book to begin with. 
       "
     />
-    {/* <GlossaryCard
+    <GlossaryCard
       title="Anil Zasperdes"
       subTitle="Zasperdes was a wereraven who had a gift for hiding things."
       content="
@@ -91,19 +91,17 @@ const Glossary = () => (
       Anil tried to lure certain groups of suspicious travellers to come to the Chalet in order to check if the carry mighty or evil magic items. 
       If so the scarlet sash would snitch them and hide the items away.
       "
-    /> */}
-    {/* <GlossaryCard
+    />
+    <GlossaryCard
       title="The Scarlet Sash"
       subTitle="A group of wereravens founded by Anil Zasperdes"
       content="
       Years after Anil Zasperdes’s death, members of the Scarlet Sash continue to use the chalet as a meeting place. 
       They keep some robes, sandals, and scarlet sashes in the house so that they have clothing to wear while in humanoid form. 
       They occasionally stash magic items of evil repute here until better hiding places can be found for them. 
-      Adventurers who come to the chalet expecting trouble might be surprised to learn that its current occupants are neither evil nor much of a threat.
-      The Scarlet Sash has eight members currently, though it has had as few as three and as many as twelve in the past. 
-      Four members are present when the characters arrive at Chalet Brantifax: Madrina Natterask, Taspar Hatchhill, Rennick Groka, and Vinique.'
+      Four members are present at Chalet Brantifax: Madrina Natterask, Taspar Hatchhill, Rennick Groka, and Vinique.'
       "
-    /> */}
+    />
     {/* <GlossaryCard
       title="The Wytchway"
       content="
