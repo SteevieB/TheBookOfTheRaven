@@ -62,7 +62,7 @@ class Recap extends React.Component {
             You were able to follow tha map to it's destination and found Chalet Brantifax.
             The house seems haunted, and you might've uncoverd a few of it's secrets.
             Also the solitary Chalet is the meeting Point of the Scarlet Sash,
-            a group of people who try to steal and hide items of evil magick.
+            a group of people who try to steal and hide items of evil magic.
             They told you they have nothing to do with the house,
             they just found the location very convenient - remote and near a shadow crossing.
             As they realized you're not a thread nor in posession of evil magic, 
