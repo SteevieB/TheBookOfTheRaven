@@ -29,7 +29,7 @@ class Goodbye extends React.Component {
   render() {
     return (
       <>
-        <div className="w-full sm:w-3/5 md:w-2/5 flex mx-auto mt-6 sm:mt-4 hidden">
+        <div className="w-full sm:w-3/5 md:w-2/5 flex mx-auto mt-6 sm:mt-4">
           <PostCard
             title="Farewell folks of courage."
             subTitle="May the raven's blessing always guard your ways."
